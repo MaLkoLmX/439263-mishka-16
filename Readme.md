@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Кадиров](https://up.htmlacademy.ru/adaptive/16/user/439263).
-* Наставник: `Неизвестно`.
+* Наставник: [Удовенко Марина](https://htmlacademy.ru/profile/id7570).
 
 ---
 
