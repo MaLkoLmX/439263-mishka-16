@@ -1,0 +1,35 @@
+.options__item {
+  display: block;
+  padding: 30px 30px;
+
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-position: 240px 20px;
+  background-repeat: no-repeat;
+
+  &:hover,
+  &:focus {
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.302);
+  }
+}
+
+.options__interior {
+  background-color: #63d1bb;
+  background-image: url("../../img/icon-interior.svg");
+  background-size: 40px 62px;
+}
+
+.options__toys {
+  background-color: #56c3b2;
+  background-image: url("../../img/icon-toy.svg");
+  background-size: 60px 60px;
+}

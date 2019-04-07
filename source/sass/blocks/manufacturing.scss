@@ -1,0 +1,35 @@
+.manufacturing {
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.manufacturing__wrapper {
+  padding: 30px 0;
+  border: 1px solid #ededed;
+}
+
+.manufacturing__title {
+  margin-bottom: 30px;
+  padding-left: 90px;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.manufacturing__video {
+  background-color: #ededef;
+}
+
+.manufacturing__description {
+  margin: 30px;
+
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.manufacturing__button {
+  width: 165px;
+}

@@ -1,0 +1,57 @@
+.add {
+  background-color: #ffffff;
+}
+
+.add__title {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.add__size {
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  text-align: center;
+}
+
+.add__size-list {
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+
+  list-style: none;
+  text-align: center;
+}
+
+.add__list-item {
+  display: inline-block;
+}
+
+.add__size-button {
+  width: 80px;
+  padding: 18px 0;
+
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: #ffffff;
+
+  border: 2px solid #ececec;
+}
+
+.add__button {
+  color: #ffffff;
+
+  background-color: #63d1bb;
+
+  border: none;
+}
