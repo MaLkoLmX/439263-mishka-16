@@ -1,0 +1,165 @@
+.filter {
+  padding: 30px;
+  padding-bottom: 54px;
+}
+
+.filter__description {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.filter__field {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.filter__name {
+  position: relative;
+  margin-bottom: 25px;
+
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.filter__name::after {
+  content: "";
+  position: absolute;
+  width: 198px;
+  height: 1px;
+  top: 10px;
+
+  background-color: #63d1bb;
+}
+
+.filter__list {
+  margin: 0;
+  padding: 0;
+  padding-left: 65px;
+
+  list-style: none;
+}
+
+.filter__item {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.filter__label-radio,
+.filter__label-checkbox {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.filter__input-radio + .filter__indicator-radio {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -50px;
+
+  background-color: #ffffff;
+
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.filter__input-radio:checked + .filter__indicator-radio::after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 6px;
+  left: 7px;
+
+  background-color: #62d1ba;
+
+  border-radius: 50%;
+}
+
+.filter__input-checkbox + .filter__indicator-checkbox {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -50px;
+
+  background-color: #ffffff;
+
+  border: 2px solid #000000;
+}
+
+.filter__input-checkbox:checked + .filter__indicator-checkbox::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 16px;
+}
+
+.filter__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.filter__input {
+  width: 259px;
+  margin-top: 20px;
+  padding-bottom: 15px;
+
+  font-size: 17px;
+  line-height: 18px;
+  color: #444444;
+
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+
+.filter__wrapper {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.filter__text {
+  width: 240px;
+  height: 137px;
+  margin-top: 20px;
+  margin-bottom: 17px;
+  padding: 16px;
+  padding-right: 0;
+
+  font-size: 17px;
+  line-height: 18px;
+  color: #444444;
+
+  border: 2px solid #000000;
+}
+
+.filter__necessarily {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.filter__button {
+  width: 256px;
+
+  background-color: #ffffff;
+}
