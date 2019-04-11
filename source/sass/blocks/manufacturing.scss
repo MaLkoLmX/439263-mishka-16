@@ -4,12 +4,16 @@
 }
 
 .manufacturing__wrapper {
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
   padding: 30px 0;
   border: 1px solid #ededed;
 }
 
 .manufacturing__title {
-  margin-bottom: 30px;
+  margin: 0;
+  margin-bottom: 140px;
   padding-left: 90px;
 
   font-size: 17px;
@@ -19,6 +23,9 @@
 }
 
 .manufacturing__video {
+  position: absolute;
+  top: 60px;
+
   background-color: #ededef;
 }
 
@@ -32,4 +39,37 @@
 
 .manufacturing__button {
   width: 165px;
+}
+
+@media (min-width: $tablet-width) {
+  .manufacturing__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+  }
+
+  .manufacturing__column {
+    margin-top: 140px;
+  }
+
+  .manufacturing__title {
+    margin: 0;
+  }
+
+  .manufacturing__video {
+    top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .manufacturing__wrapper {
+    flex-direction: initial;
+    width: 1048px;
+  }
+
+  .manufacturing__column {
+    width: 367px;
+    margin-top: 0;
+    margin-left: 670px;
+  }
 }

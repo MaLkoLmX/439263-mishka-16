@@ -1,4 +1,9 @@
 .about-us {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.about-us__wrapper {
   padding: 30px;
 }
 
@@ -27,4 +32,27 @@
   line-height: 20px;
   font-weight: bold;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    width: 669px;
+    margin: 0 auto;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    width: 50%;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    width: 1048px;
+  }
 }

@@ -1,6 +1,5 @@
 .options__item {
   display: block;
-  padding: 30px 30px;
 
   font-size: 19px;
   line-height: 24px;
@@ -8,28 +7,53 @@
   color: #ffffff;
   text-decoration: none;
 
-  background-position: 240px 20px;
-  background-repeat: no-repeat;
-
-  &:hover,
-  &:focus {
-    padding-top: 25px;
-    padding-bottom: 40px;
-  }
+  background-color: #63d1bb;
 
   &:active {
     color: rgba(255, 255, 255, 0.302);
   }
 }
 
-.options__interior {
-  background-color: #63d1bb;
+.option__item-wrapper {
+  display: block;
+  width: 290px;
+  margin: 0 auto;
+  padding: 30px 0;
+
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.options__item--toys {
+  background-color: #56c3b2;
+}
+
+.option__item-wrapper--interior {
   background-image: url("../../img/icon-interior.svg");
   background-size: 40px 62px;
 }
 
-.options__toys {
+.option__item-wrapper--toys {
   background-color: #56c3b2;
   background-image: url("../../img/icon-toy.svg");
   background-size: 60px 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .options {
+    display: flex;
+    width: 670px;
+    margin: 0 auto;
+    margin-top: -108px;
+  }
+
+  .options__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .options {
+    width: 1048px;
+  }
 }

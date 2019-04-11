@@ -1,10 +1,13 @@
 .filter {
+  width: 320px;
   padding: 30px;
   padding-bottom: 54px;
+  margin: 0 auto;
 }
 
 .filter__description {
-  margin: 0;
+  width: 260px;
+  margin: 0 auto;
   margin-bottom: 25px;
 
   font-size: 13px;
@@ -162,4 +165,59 @@
   width: 256px;
 
   background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .filter {
+    width: 100%;
+  }
+
+  .filter__description {
+    width: 645px;
+  }
+
+  .filter__field {
+    width: 665px;
+    margin: 0 auto;
+  }
+
+  .filter__list {
+    padding-left: 300px;
+  }
+
+  .filter__list--checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter__list--checkbox .filter__item {
+    width: 180px;
+  }
+
+  .filter__field--name .filter__wrapper {
+    margin-left: 300px;
+  }
+
+  .filter__input {
+    width: 502px;
+  }
+
+  .filter__text {
+    width: 502px;
+  }
+
+  .filter__column {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 1120px) {
+  .filter__field {
+    width: 930px;
+  }
+
+  .filter__list--checkbox {
+    padding-left: 230px;
+  }
 }

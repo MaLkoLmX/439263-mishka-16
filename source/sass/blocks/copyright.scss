@@ -2,3 +2,9 @@
   width: 182px;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin: 0;
+  }
+}

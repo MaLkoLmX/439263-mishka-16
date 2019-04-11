@@ -1,4 +1,9 @@
 .reviews {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.reviews__wrapper {
   padding: 30px;
 }
 
@@ -46,4 +51,29 @@
 
   border: 1px solid #ececec;
   vertical-align: middle;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    width: 669px;
+  }
+
+  .reviews__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reviews__title {
+    order: -1;
+  }
+
+  .reviews__button {
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: 1048px;
+  }
 }

@@ -3,38 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог товаров</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="header">
       <nav class="header__nav nav">
-        <div class="nav__wrapper">
+        <div class="nav__management">
           <a class="nav__logo logo" href="index.html">
             <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
           </a>
-          <button class="nav__close" type="button"><span class="visually-hidden">Закрыть</span></button>
-
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="nav__item">
-              <input class="nav__search" type="search" placeholder="Поиск по сайту">
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
+          <button class="nav__burgers nav__burgers--noJS" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="nav__close nav__close--noJS nav__close--closed" type="button"><span class="visually-hidden">Закрыть</span></button>
         </div>
 
-        <a class="nav__logo logo" href="index.html">
-          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
-        </a>
-        <button class="nav__burgers" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="nav__list nav__list--noJS nav__list--closed">
+          <li class="nav__item-logo">
+            <a class="nav__link-logo" href="index.html">
+              <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
+            </a>
+          </li>
+          <li class="nav__item nav__item--catalog-absolute">
+            <a class="nav__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="nav__item nav__item--form-absolute">
+            <a class="nav__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="nav__item">
+            <input class="nav__search" type="search" placeholder="Поиск по сайту">
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Корзина: пока пуста</a>
+          </li>
+          <li class="nav__item nav__item--delivery">Бесплатная доставка по России</li>
+          <li class="nav__item nav__item--receipts">
+            <a class="nav__link" href="#">Новые поступления</a>
+          </li>
+          <li class="nav__item nav__item--sell-out">
+            <a class="nav__link" href="#">Распродажа</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -81,15 +91,21 @@
 
       <section class="main__manufacturing manufacturing">
         <div class="manufacturing__wrapper">
-          <h3 class="manufacturing__title">Процесс производства</h3>
+          <div class="manufacturing__column">
+            <h3 class="manufacturing__title">Процесс производства</h3>
+            <p class="manufacturing__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="manufacturing__button button" href="#">Сделать заказ</a>
+          </div>
           <img class="manufacturing__video" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео процесса производства">
-          <p class="manufacturing__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="manufacturing__button button" href="#">Сделать заказ</a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
+      <a class="footer__logo-footer logo-footer" href="index.html">
+        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
+      </a>
+
       <ul class="footer__social-list social-list">
         <li class="social-list__item">
           <a class="social-list__link" href="#">
@@ -156,5 +172,7 @@
       </ul>
       <a class="add__button button" href="#">Добавить</a>
     </section>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>
