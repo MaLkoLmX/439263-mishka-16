@@ -19,32 +19,37 @@
           <button class="nav__close nav__close--noJS nav__close--closed" type="button"><span class="visually-hidden">Закрыть</span></button>
         </div>
 
-        <ul class="nav__list nav__list--noJS nav__list--closed">
-          <li class="nav__item-logo">
-            <a class="nav__link-logo" href="index.html">
-              <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
-            </a>
-          </li>
-          <li class="nav__item nav__item--catalog-absolute">
-            <a class="nav__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="nav__item nav__item--form-absolute">
-            <a class="nav__link" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="nav__item">
-            <input class="nav__search" type="search" placeholder="Поиск по сайту">
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Корзина: пока пуста</a>
-          </li>
-          <li class="nav__item nav__item--delivery">Бесплатная доставка по России</li>
-          <li class="nav__item nav__item--receipts">
-            <a class="nav__link" href="#">Новые поступления</a>
-          </li>
-          <li class="nav__item nav__item--sell-out">
-            <a class="nav__link" href="#">Распродажа</a>
-          </li>
-        </ul>
+        <div class="nav__wrapper nav__list--noJS nav__list--closed">
+          <ul class="nav__list">
+            <li class="nav__item-logo">
+              <a class="nav__link-logo" href="index.html">
+                <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="nav__item nav__item--receipts">
+              <a class="nav__link" href="#">Новые поступления</a>
+            </li>
+            <li class="nav__item nav__item--sell-out">
+              <a class="nav__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+
+          <ul class="nav__list-second">
+            <li class="nav__item">
+              <input class="nav__search" type="search" placeholder="Поиск по сайту">
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Корзина: пока пуста</a>
+            </li>
+            <li class="nav__item nav__item--delivery">Бесплатная доставка по России</li>
+          </ul>
+        </div>
       </nav>
     </header>
 

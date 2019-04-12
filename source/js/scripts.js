@@ -1,4 +1,4 @@
-var list = document.querySelector(".nav__list");
+var list = document.querySelector(".nav__wrapper");
 var burgers = document.querySelector(".nav__burgers");
 var close = document.querySelector(".nav__close");
 

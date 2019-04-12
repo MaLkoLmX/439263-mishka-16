@@ -28,7 +28,8 @@
   background-image: url("../../img/icon-menu-close.svg");
 }
 
-.nav__list {
+.nav__list,
+.nav__list-second {
   margin: 0;
   padding: 0;
 
@@ -128,16 +129,35 @@
 }
 
 @media (min-width: $tablet-width) {
+  .nav {
+    text-align: inherit;
+  }
+
+  .nav__wrapper {
+    display: flex;
+    width: 768px;
+    margin: 0 auto;
+  }
+
   .nav__logo {
     display: none;
   }
 
   .nav__list {
-    position: relative;
     display: flex;
     justify-content: space-around;
-    width: 768px;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 371px;
+    margin-bottom: -80px;
+    padding-top: 40px;
+  }
+
+  .nav__list-second {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 398px;
+    margin-bottom: -80px;
   }
 
   .nav__burgers,
@@ -149,66 +169,46 @@
     border: none;
   }
 
-  .nav__item--catalog-absolute {
-    position: absolute;
-    top: 80px;
-    left: 0;
-  }
-
-  .nav__item--form-absolute {
-    position: absolute;
-    top: 80px;
-  }
-
-  .nav__item--delivery {
-    position: absolute;
-    top: 110px;
-    right: 0;
+  .nav__item-logo {
+    margin-right: 259px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .nav__list {
+  .nav__wrapper {
     width: 1150px;
+  }
+
+  .nav__list {
+    width: 753px;
+    padding: 0;
+  }
+
+  .nav__list-second {
+    width: 399px;
+  }
+
+  .nav__item {
+    order: 0;
+  }
+
+  .nav__item:nth-child(4) {
+    order: 1;
+  }
+
+  .nav__item:nth-child(5) {
+    order: 1;
+  }
+
+  .nav__item-logo {
+    margin: 0;
+    margin-right: 121px;
+
+    order: 1;
   }
 
   .nav__item--receipts,
   .nav__item--sell-out {
-    position: absolute;
     display: block;
-    top: 80px;
-  }
-
-  .nav__item--receipts {
-    left: 0;
-  }
-
-  .nav__item--sell-out {
-    left: 300px;
-  }
-
-  .nav__item--catalog-absolute,
-  .nav__item--form-absolute {
-    position: static;
-  }
-
-  .nav__item--catalog-absolute {
-    order: 1;
-  }
-
-  .nav__item--form-absolute {
-    order: 2;
-  }
-
-  .nav__item-logo {
-    order: 3;
-  }
-
-  .nav__item:nth-child(4) {
-    order: 4;
-  }
-
-  .nav__item:nth-child(5) {
-    order: 4;
   }
 }
