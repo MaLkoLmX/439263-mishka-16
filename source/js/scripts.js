@@ -1,21 +1,16 @@
-var list = document.querySelector(".nav__wrapper");
-var burgers = document.querySelector(".nav__burgers");
-var close = document.querySelector(".nav__close");
+var listNav = document.querySelector(".nav__list-nav");
+var listUser = document.querySelector(".nav__list-user");
+var listOffers = document.querySelector(".nav__list-offers");
+var toggle = document.querySelector(".nav__toggle");
 
-list.classList.remove("nav__list--noJS");
-burgers.classList.remove("nav__burgers--noJS");
-close.classList.remove("nav__close--noJS");
+toggle.classList.remove("nav__toggle--noJS");
+listNav.classList.remove("nav__list--noJS");
+listOffers.classList.remove("nav__list--noJS");
+listUser.classList.remove("nav__list--noJS");
 
-burgers.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  burgers.classList.add("nav__burgers--opened");
-  list.classList.add("nav__list--opened");
-  close.classList.add("nav__close--opened");
-});
-
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  burgers.classList.remove("nav__burgers--opened");
-  list.classList.remove("nav__list--opened");
-  close.classList.remove("nav__close--opened");
+toggle.addEventListener("click", function(evt) {
+  toggle.classList.toggle("nav__toggle--closed");
+  listNav.classList.toggle("nav__list--opened");
+  listOffers.classList.toggle("nav__list--opened");
+  listUser.classList.toggle("nav__list--opened");
 });

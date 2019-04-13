@@ -68,6 +68,10 @@
   .contacts__wrapper {
     width: 669px;
   }
+
+  .contacts__addresses {
+    display: flex;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -81,6 +85,11 @@
   .contacts__wrapper {
     width: 510px;
     margin: 0;
+  }
+
+  .contacts__addresses {
+    flex-wrap: wrap;
+    width: 300px;
   }
 
   .contacts__map {

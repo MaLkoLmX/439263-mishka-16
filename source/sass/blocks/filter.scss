@@ -31,8 +31,7 @@
   text-transform: uppercase;
 }
 
-.filter__name::after {
-  content: "";
+.filter__name-line {
   position: absolute;
   width: 198px;
   height: 1px;
@@ -168,6 +167,10 @@
 @media (min-width: $tablet-width) {
   .filter {
     width: 100%;
+  }
+
+  .filter__name-line {
+    display: none;
   }
 
   .filter__description {

@@ -1,11 +1,12 @@
-.nav {
+.nav__management {
   position: relative;
 
   text-align: center;
+
+  border-bottom: 1px solid #ececec;
 }
 
-.nav__burgers,
-.nav__close {
+.nav__toggle {
   position: absolute;
   bottom: 10px;
   right: 20px;
@@ -20,16 +21,18 @@
   border: none;
 }
 
-.nav__close {
-  top: 10px;
+.nav__toggle--closed,
+.nav__toggle--noJS {
   width: 21px;
   height: 20px;
 
   background-image: url("../../img/icon-menu-close.svg");
 }
 
-.nav__list,
-.nav__list-second {
+.nav__list-nav,
+.nav__list-user,
+.nav__list-offers {
+  display: none;
   margin: 0;
   padding: 0;
 
@@ -37,19 +40,12 @@
 }
 
 .nav__item {
-  border-top: 1px solid #ececec;
-}
-
-.nav__item--receipts,
-.nav__item--sell-out {
-  display: none;
+  border-bottom: 1px solid #ececec;
 }
 
 .nav__link {
   display: block;
-  width: 182px;
-  margin: 0 auto;
-  padding: 30px 0;
+  padding: 30px 76px;
 
   font-size: 17px;
   line-height: 24px;
@@ -69,8 +65,8 @@
 }
 
 .nav__search {
-  width: 182px;
-  padding: 30px 0;
+  padding: 30px;
+  padding-left: 76px;
 
   font-size: 17px;
   line-height: 24px;
@@ -90,125 +86,144 @@
   }
 }
 
-.nav__list--closed,
-.nav__close--closed,
-.nav__burgers--opened,
-.nav__burgers--noJS {
-  display: none;
-}
-
-.nav__list--noJS,
-.nav__close--noJS,
-.nav__list--opened,
-.nav__close--opened {
-  display: block;
-}
-
 @media (max-width: $mobile-width-only) {
-  .nav__list--closed,
-  .nav__close--closed,
-  .nav__burgers--opened,
-  .nav__burgers--noJS {
+  .nav__item--receipts,
+  .nav__item--sell-out,
+  .nav__delivery {
+    display: none;
+  }
+
+  .nav__list--closed {
     display: none;
   }
 
   .nav__list--noJS,
-  .nav__close--noJS,
-  .nav__list--opened,
-  .nav__close--opened {
+  .nav__list--opened, {
     display: block;
-  }
-
-  .nav__item--delivery {
-    display: none;
-  }
-
-  .nav__item-logo {
-    display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
   .nav {
-    text-align: inherit;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .nav__wrapper {
-    display: flex;
-    width: 768px;
-    margin: 0 auto;
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__management {
+    min-width: 48%;
+
+    text-align: left;
   }
 
   .nav__logo {
-    display: none;
+    display: block;
+    width: 113px;
+    height: 46px;
+    margin: 22px 48px;
   }
 
-  .nav__list {
+  .nav__list-nav,
+  .nav__list-user {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 371px;
-    margin-bottom: -80px;
-    padding-top: 40px;
   }
 
-  .nav__list-second {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 398px;
-    margin-bottom: -80px;
+  .nav__list-nav {
+    width: 62%;
+
+    background-color: #fafafa;
+
+    order: 1;
   }
 
-  .nav__burgers,
-  .nav__close {
-    display: none;
+  .nav__list-user {
+    min-width: 52%;
+
+    border-bottom: 1px solid #ececec;
+  }
+
+  .nav__delivery {
+    width: 38%;
+    padding: 25px 0;
+
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000;
+
+    background-color: #fafafa;
+
+    order: 2;
   }
 
   .nav__item {
     border: none;
   }
 
-  .nav__item-logo {
-    margin-right: 259px;
+  .nav__link {
+    padding: 25px 0;
+    padding-left: 48px;
+  }
+
+  .nav__link--basket {
+    padding: 36px;
+    padding-left: 84px;
+  }
+
+  .nav__item--search {
+    border-right: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+  }
+
+  .nav__search {
+    padding: 0;
+    width: 80px;
+    height: 100%;
+
+    border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .nav__wrapper {
-    width: 1150px;
+  .nav__list-offers {
+    display: flex;
+    min-width: 33%;
+
+    background-color: #fafafa;
+
+    order: 2;
   }
 
-  .nav__list {
-    width: 753px;
-    padding: 0;
+  .nav__management {
+    min-width: 26%;
+
+    text-align: center;
+
+    order: 1;
   }
 
-  .nav__list-second {
-    width: 399px;
+  .nav__logo {
+    margin: 22px auto;
   }
 
-  .nav__item {
+  .nav__list-nav {
+    width: 40%;
+
+    background-color: #ffffff;
+
     order: 0;
   }
 
-  .nav__item:nth-child(4) {
-    order: 1;
+  .nav__list-user {
+    min-width: 34%;
+    order: 2;
   }
 
-  .nav__item:nth-child(5) {
-    order: 1;
-  }
+  .nav__delivery {
+    min-width: 67%;
 
-  .nav__item-logo {
-    margin: 0;
-    margin-right: 121px;
-
-    order: 1;
-  }
-
-  .nav__item--receipts,
-  .nav__item--sell-out {
-    display: block;
+    text-align: right;
   }
 }

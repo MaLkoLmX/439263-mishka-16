@@ -15,41 +15,37 @@
           <a class="nav__logo logo" href="index.html">
             <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
           </a>
-          <button class="nav__burgers nav__burgers--noJS" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <button class="nav__close nav__close--noJS nav__close--closed" type="button"><span class="visually-hidden">Закрыть</span></button>
+          <button class="nav__toggle nav__toggle--noJS" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
 
-        <div class="nav__wrapper nav__list--noJS nav__list--closed">
-          <ul class="nav__list">
-            <li class="nav__item-logo">
-              <a class="nav__link-logo" href="index.html">
-                <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="nav__item nav__item--receipts">
-              <a class="nav__link" href="#">Новые поступления</a>
-            </li>
-            <li class="nav__item nav__item--sell-out">
-              <a class="nav__link" href="#">Распродажа</a>
-            </li>
-          </ul>
+        <ul class="nav__list-nav nav__list--noJS">
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
 
-          <ul class="nav__list-second">
-            <li class="nav__item">
-              <input class="nav__search" type="search" placeholder="Поиск по сайту">
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Корзина: пока пуста</a>
-            </li>
-            <li class="nav__item nav__item--delivery">Бесплатная доставка по России</li>
-          </ul>
-        </div>
+        <ul class="nav__list-user nav__list--noJS">
+          <li class="nav__item nav__item--search">
+            <input class="nav__search" type="search" placeholder="Поиск по сайту">
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--basket" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+
+        <ul class="nav__list-offers nav__list--noJS">
+          <li class="nav__item nav__item--receipts">
+            <a class="nav__link" href="#">Новые поступления</a>
+          </li>
+          <li class="nav__item nav__item--sell-out">
+            <a class="nav__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+
+        <span class="nav__delivery">Бесплатная доставка по России</span>
       </nav>
     </header>
 
@@ -93,10 +89,8 @@
               </table>
             </div>
             <img class="product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Картинка товара">
-            <div class="product__order">
-              <b class="product__price">Цена: 990 руб.</b>
-              <a class="product__button button modal__show">Заказать</a>
-            </div>
+            <b class="product__price">Цена: 990 руб.</b>
+            <a class="product__button button modal__show">Заказать</a>
           </div>
         </div>
       </section>
