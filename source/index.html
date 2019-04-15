@@ -11,42 +11,44 @@
   <body>
     <header class="header">
       <nav class="header__nav nav">
-        <div class="nav__management">
-          <a class="nav__logo logo" href="index.html">
-            <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
-          </a>
-          <button class="nav__toggle nav__toggle--noJS" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </div>
+        <div class="nav__wrapper">
+          <div class="nav__management">
+            <a class="nav__logo logo" href="index.html">
+              <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
+            </a>
+            <button class="nav__toggle nav__toggle--noJS" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
 
-        <ul class="nav__list-nav nav__list--noJS">
-          <li class="nav__item">
-            <a class="nav__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
+          <ul class="nav__list-nav nav__list--noJS">
+            <li class="nav__item">
+              <a class="nav__link nav__link--catalog nav__link--tablet-bottom" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--tablet-bottom" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
 
-        <ul class="nav__list-user nav__list--noJS">
-          <li class="nav__item nav__item--search">
-            <input class="nav__search" type="search" placeholder="Поиск по сайту">
-          </li>
-          <li class="nav__item">
-            <a class="nav__link nav__link--basket" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
+          <ul class="nav__list-user nav__list--noJS">
+            <li class="nav__item nav__item--search">
+              <input class="nav__search" type="search" placeholder="Поиск по сайту">
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--basket" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
 
-        <ul class="nav__list-offers nav__list--noJS">
-          <li class="nav__item nav__item--receipts">
-            <a class="nav__link" href="#">Новые поступления</a>
-          </li>
-          <li class="nav__item nav__item--sell-out">
-            <a class="nav__link" href="#">Распродажа</a>
-          </li>
-        </ul>
+          <ul class="nav__list-offers nav__list--noJS">
+            <li class="nav__item nav__item--receipts">
+              <a class="nav__link nav__link--desktop-bottom" href="#">Новые поступления</a>
+            </li>
+            <li class="nav__item nav__item--sell-out">
+              <a class="nav__link nav__link--desktop-bottom" href="#">Распродажа</a>
+            </li>
+          </ul>
 
-        <span class="nav__delivery">Бесплатная доставка по России</span>
-      </nav>
+          <span class="nav__delivery">Бесплатная доставка по России</span>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
@@ -75,22 +77,22 @@
               <p class="product__descritption">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
               <table class="product__table">
                 <tr class="product__line">
-                  <td class="product__column product__column--first-column">Цвет:</td>
-                  <td class="product__column">«Тиффани»/серый</td>
+                  <td class="product__column-table product__column--first-column">Цвет:</td>
+                  <td class="product__column-table">«Тиффани»/серый</td>
                 </tr>
                 <tr class="product__line">
-                  <td class="product__column product__column--first-column">Диаметр:</td>
-                  <td class="product__column">25 см</td>
+                  <td class="product__column-table product__column--first-column">Диаметр:</td>
+                  <td class="product__column-table">25 см</td>
                 </tr>
                 <tr class="product__line">
-                  <td class="product__column product__column--first-column">Высота:</td>
-                  <td class="product__column">15 см</td>
+                  <td class="product__column-table product__column--first-column">Высота:</td>
+                  <td class="product__column-table">15 см</td>
                 </tr>
               </table>
+              <img class="product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Картинка товара">
+              <b class="product__price">Цена: 990 руб.</b>
+              <a class="product__button button modal__show">Заказать</a>
             </div>
-            <img class="product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Картинка товара">
-            <b class="product__price">Цена: 990 руб.</b>
-            <a class="product__button button modal__show">Заказать</a>
           </div>
         </div>
       </section>
@@ -99,7 +101,7 @@
         <div class="about-us__wrapper">
           <h3 class="about-us__title">Коротко о нас:</h3>
           <ul class="about-us__list">
-            <li class="about-us__item">Экологически чистые материалы</li>
+            <li class="about-us__item about-us__item--materials">Экологически чистые материалы</li>
             <li class="about-us__item">Скандинавский стиль по российской цене</li>
             <li class="about-us__item">Увеличивает лайкина фотографиях</li>
             <li class="about-us__item">Связано вручную с любовью и умилением</li>
@@ -129,14 +131,14 @@
         <div class="contacts__wrapper">
           <h3 class="contacts__title">Контакты</h3>
           <div class="contacts__addresses">
-            <p class="contacts__data">e-mail: info@mimimishkashop.ru</p>
+            <p class="contacts__data">e-mail: <span class="contacts__column">info@mimimishkashop.ru</span></p>
             <p class="contacts__data">адрес: <span class="contacts__column">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span></p>
           </div>
+          <a class="contacts__button button" href="#">Напишите нам</a>
         </div>
         <div class="contacts__map">
           <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554137521852!5m2!1sru!2sru" style="border:0" allowfullscreen></iframe>
         </div>
-        <a class="contacts__button button" href="#">Напишите нам</a>
       </section>
     </main>
 
@@ -185,7 +187,7 @@
       </ul>
 
       <div class="footer__copyright copyright">
-        <b>Разработано</b>
+        <b class="copyright__designed">Разработано</b>
         <a class="copyright__academy" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Логотип Академии</span>
           <svg width="27" height="34" viewBox="0 0 26.943 34.09">

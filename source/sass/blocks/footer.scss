@@ -13,6 +13,11 @@
 @media (min-width: $tablet-width) {
   .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 63px 0;
+  }
+
+  .footer__logo-footer {
+    width: 170px;
   }
 }
