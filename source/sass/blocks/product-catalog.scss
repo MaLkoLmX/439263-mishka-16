@@ -11,6 +11,8 @@
 }
 
 .product-catalog__item {
+  width: 260px;
+  margin: 0 auto;
   margin-bottom: 30px;
 
   border: 1px solid #ededed;
@@ -52,4 +54,25 @@
 .product-catalog__image {
   background-color: #ececee;
   vertical-align: middle;
+}
+
+@media (min-width: $tablet-width) {
+  .product-catalog__item {
+    width: 665px;
+  }
+
+  .product-catalog__link {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-catalog__list {
+    display: flex;
+  }
+
+  .product-catalog__link {
+    flex-direction: column-reverse;
+  }
 }

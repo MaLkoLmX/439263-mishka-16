@@ -1,7 +1,23 @@
 .footer {
-  width: 320px;
-  margin: 0 auto;
   padding: 25px 0;
 
   background-color: #f1f1f1;
+}
+
+@media (max-width: $mobile-width-only) {
+  .footer__logo-footer {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 63px 0;
+  }
+
+  .footer__logo-footer {
+    width: 170px;
+  }
 }

@@ -1,4 +1,19 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
   width: 182px;
   margin: 0 auto;
+}
+
+.copyright__designed {
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: bold;
+  color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin: 0;
+  }
 }

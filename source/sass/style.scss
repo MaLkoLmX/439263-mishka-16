@@ -1,7 +1,8 @@
+@import "normalize.scss";
 @import "helpers.scss";
 @import "general.scss";
-@import "blocks/header.scss";
-@import "blocks/main.scss";
+@import "variables.scss";
+@import "blocks/wrapper.scss";
 @import "blocks/footer.scss";
 @import "blocks/nav.scss";
 @import "blocks/cute-stuff.scss";
@@ -13,7 +14,6 @@
 @import "blocks/social-list.scss";
 @import "blocks/copyright.scss";
 @import "blocks/add.scss";
-@import "blocks/modal.scss";
 @import "blocks/main-header.scss";
 @import "blocks/product-catalog.scss";
 @import "blocks/manufacturing.scss";
