@@ -1,5 +1,22 @@
+.options {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .options__item {
-  display: block;
+  position: relative;
+  min-height: 103px;
+}
+
+.options__link {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 103px;
 
   font-size: 19px;
   line-height: 24px;
@@ -9,54 +26,96 @@
 
   background-color: #63d1bb;
 
+  &:hover,
+  &:focus {
+    padding-bottom: 6px;
+  }
+
   &:active {
     color: rgba(255, 255, 255, 0.302);
   }
 }
 
-.option__item-wrapper {
-  display: block;
-  width: 260px;
-  margin: 0 auto;
-  padding: 27px 0;
+.options__link--toys {
+  background-color: #56c3b2;
+}
+
+.options__link--interior::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 35px;
+  margin-top: -31px;
+
+  width: 40px;
+  height: 62px;
 
   background-position: right;
   background-repeat: no-repeat;
-}
-
-.options__item--toys {
-  background-color: #56c3b2;
-}
-
-.option__item-wrapper--interior {
   background-image: url("../../img/icon-interior.svg");
-  background-size: 40px 62px;
+
+  opacity: 0.5;
 }
 
-.option__item-wrapper--toys {
-  padding-bottom: 29px;
+.options__link--toys::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  margin-top: -31px;
 
-  background-color: #56c3b2;
+  width: 60px;
+  height: 62px;
+
+  background-position: right;
+  background-repeat: no-repeat;
   background-image: url("../../img/icon-toy.svg");
-  background-size: 60px 60px;
+
+  opacity: 0.5;
+}
+
+.options__link--interior:focus::after,
+.options__link--toys:focus::after {
+  opacity: 0.7;
+}
+
+.options__link-wrapper {
+  position: relative;
+  display: block;
+  width: 260px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .options {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
     display: flex;
-    width: 670px;
-    margin: 0 auto;
-    margin-top: -105px;
+    width: 668px;
+    margin-left: -334px;
   }
 
   .options__item {
     width: 50%;
   }
+
+  .options__link {
+    min-height: 118px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .options {
-    margin-top: -104px;
-    width: 1048px;
+    left: 50%;
+    width: 1050px;
+    margin-left: -525px;
+  }
+
+  .options__link-wrapper {
+    width: 450px;
   }
 }

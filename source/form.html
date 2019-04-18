@@ -24,7 +24,7 @@
               <a class="nav__link nav__link--catalog nav__link--tablet-bottom" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--tablet-bottom" href="form.html">Вязание на заказ</a>
+              <a class="nav__link nav__link--form nav__link--tablet-bottom" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
 
@@ -53,13 +53,13 @@
 
     <main class="main">
       <h1 class="visually-hidden">Милые штуки ручной работы для дома</h1>
-      <header class="main__header main-header">
+      <header class="main__header main-header main-header--form">
         <h2 class="main-header__title">Вязание на заказ</h2>
       </header>
 
       <form class="main__filter filter wrapper" method="get" action="https://echo.htmlacademy.ru">
         <p class="filter__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <div class="filter__field">
+        <div class="filter__field filter__field--radio">
           <h3 class="filter__name">Тип<span class="filter__name-line"></span></h3>
           <ul class="filter__list">
             <li class="filter__item">
@@ -79,82 +79,88 @@
           </ul>
         </div>
 
-        <div class="filter__field">
-          <h3 class="filter__name">Цвет<span class="filter__name-line"></span></h3>
-          <ul class="filter__list filter__list--checkbox">
-            <li class="filter__item">
-              <label class="filter__label-checkbox">
-                <input class="filter__input-checkbox visually-hidden" type="checkbox" name="White" checked>
-            <span class="filter__indicator-checkbox"></span>
-                Белый
-              </label>
-            </li>
-            <li class="filter__item">
-              <label class="filter__label-checkbox">
-                <input class="filter__input-checkbox visually-hidden" type="checkbox" name="Gray" checked>
-            <span class="filter__indicator-checkbox"></span>
-                Серый
-              </label>
-            </li>
-            <li class="filter__item">
-              <label class="filter__label-checkbox">
-                <input class="filter__input-checkbox visually-hidden" type="checkbox" name="Tiffany">
-                <span class="filter__indicator-checkbox"></span>
-                «Тиффани»
-              </label>
-            </li>
-            <li class="filter__item">
-              <label class="filter__label-checkbox">
-                <input class="filter__input-checkbox visually-hidden" type="checkbox" name="Black">
-                <span class="filter__indicator-checkbox"></span>
-                Черный
-              </label>
-            </li>
-            <li class="filter__item">
-              <label class="filter__label-checkbox">
-                <input class="filter__input-checkbox visually-hidden" type="checkbox" name="Pink">
+        <div class="filter__field filter__field--checkbox">
+          <div class="filter__field-bg">
+            <h3 class="filter__name">Цвет<span class="filter__name-line"></span></h3>
+            <ul class="filter__list filter__list--checkbox">
+              <li class="filter__item">
+                <label class="filter__label-checkbox">
+                  <input class="filter__input-checkbox visually-hidden" type="checkbox" name="White" checked>
               <span class="filter__indicator-checkbox"></span>
-                Розовый
-              </label>
-            </li>
-            <li class="filter__item">
-              <label class="filter__label-checkbox">
-                <input class="filter__input-checkbox visually-hidden" type="checkbox" name="Orange">
+                  Белый
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__label-checkbox">
+                  <input class="filter__input-checkbox visually-hidden" type="checkbox" name="Gray" checked>
+              <span class="filter__indicator-checkbox"></span>
+                  Серый
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__label-checkbox">
+                  <input class="filter__input-checkbox visually-hidden" type="checkbox" name="Tiffany">
+                  <span class="filter__indicator-checkbox"></span>
+                  «Тиффани»
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__label-checkbox">
+                  <input class="filter__input-checkbox visually-hidden" type="checkbox" name="Black">
+                  <span class="filter__indicator-checkbox"></span>
+                  Черный
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__label-checkbox">
+                  <input class="filter__input-checkbox visually-hidden" type="checkbox" name="Pink">
                 <span class="filter__indicator-checkbox"></span>
-                Оранжевый
-              </label>
-            </li>
-          </ul>
+                  Розовый
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__label-checkbox">
+                  <input class="filter__input-checkbox visually-hidden" type="checkbox" name="Orange">
+                  <span class="filter__indicator-checkbox"></span>
+                  Оранжевый
+                </label>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="filter__field filter__field--name">
           <h3 class="filter__name">ФИО<span class="filter__name-line"></span></h3>
-          <p class="filter__wrapper">
-            <label class="filter__label" for="name">Имя:</label>
-            <input class="filter__input" id="name" type="text" name="name" placeholder="Введите ваше имя*">
-          </p>
-          <p class="filter__wrapper">
-            <label class="filter__label" for="surname">Фамилия:</label>
-            <input class="filter__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*">
-          </p>
-          <p class="filter__wrapper">
-            <label class="filter__label" for="patronymic">Отчество:</label>
-            <input class="filter__input" id="patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
-          </p>
+          <div class="filter__field-wrapper">
+            <p class="filter__wrapper">
+              <label class="filter__label" for="name">Имя:</label>
+              <input class="filter__input" id="name" type="text" name="name" placeholder="Введите ваше имя*">
+            </p>
+            <p class="filter__wrapper">
+              <label class="filter__label" for="surname">Фамилия:</label>
+              <input class="filter__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*">
+            </p>
+            <p class="filter__wrapper">
+              <label class="filter__label" for="patronymic">Отчество:</label>
+              <input class="filter__input" id="patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
+            </p>
+          </div>
         </div>
 
-        <div class="filter__field">
-          <p class="filter__wrapper">
-            <label class="filter__name" for="tel">Тел<span class="filter__name-line"></span></label>
-            <input class="filter__input" id="tel" type="text" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-          </p>
-          <p class="filter__wrapper">
-            <label class="filter__name" for="email">E-mail<span class="filter__name-line"></span></label>
-            <input class="filter__input" id="email" type="text" name="e-mail" placeholder="Ваш Email*">
-          </p>
+        <div class="filter__field filter__field--contacts">
+          <div class="filter__field-wrapper">
+            <p class="filter__wrapper">
+              <label class="filter__name" for="tel">Тел<span class="filter__name-line"></span></label>
+              <input class="filter__input" id="tel" type="text" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            </p>
+            <p class="filter__wrapper">
+              <label class="filter__name" for="email">E-mail<span class="filter__name-line"></span></label>
+              <input class="filter__input" id="email" type="text" name="e-mail" placeholder="Ваш Email*">
+            </p>
+          </div>
         </div>
 
-        <div class="filter__field">
+        <div class="filter__field filter__field--text">
           <label class="filter__name" for="additionally">Доп<span class="filter__name-line"></span></label>
           <textarea class="filter__text" id="additionally" name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
@@ -211,7 +217,7 @@
       </ul>
 
       <div class="footer__copyright copyright">
-        <b>Разработано</b>
+        <b class="copyright__designed">Разработано</b>
         <a class="copyright__academy" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Логотип Академии</span>
           <svg width="27" height="34" viewBox="0 0 26.943 34.09">

@@ -10,7 +10,7 @@
 
   <body>
     <header class="header">
-      <nav class="header__nav nav">
+      <nav class="header__nav nav nav--index">
         <div class="nav__wrapper">
           <div class="nav__management">
             <a class="nav__logo logo" href="index.html">
@@ -24,7 +24,7 @@
               <a class="nav__link nav__link--catalog nav__link--tablet-bottom" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--tablet-bottom" href="form.html">Вязание на заказ</a>
+              <a class="nav__link nav__link--form nav__link--tablet-bottom" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
 
@@ -52,19 +52,24 @@
     </header>
 
     <main class="main">
-      <header class="main__cute-stuff cute-stuff">
+      <section class="header__cute-stuff cute-stuff">
         <div class="cute-stuff__wrapper">
           <h1 class="cute-stuff__title">Милые штуки ручной<br> работы для дома</h1>
         </div>
-        <div class="cute-stuff__options options">
-          <a class="options__item options__item--interior" href="#">
-            <span class="option__item-wrapper option__item-wrapper--interior">Предметы<br> интерьера</span>
-          </a>
-          <a class="options__item options__item--toys" href="#">
-            <span class="option__item-wrapper option__item-wrapper--toys">Детские<br> игрушки</span>
-          </a>
-        </div>
-      </header>
+        <ul class="cute-stuff__options options">
+          <li class="options__item">
+            <a class="options__link options__link--interior" href="#">
+              <span class="options__link-wrapper options__link-wrapper--interior">Предметы<br> интерьера</span>
+            </a>
+          </li>
+          <li class="options__item">
+            <a class="options__link options__link--toys" href="#">
+              <span class="options__link-wrapper options__link-wrapper--toys">Детские<br> игрушки</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
 
       <section class="main__product product wrapper">
         <div class="product__wrapper">
@@ -101,12 +106,24 @@
         <div class="about-us__wrapper">
           <h3 class="about-us__title">Коротко о нас:</h3>
           <ul class="about-us__list">
-            <li class="about-us__item about-us__item--materials">Экологически чистые материалы</li>
-            <li class="about-us__item">Скандинавский стиль по российской цене</li>
-            <li class="about-us__item">Увеличивает лайкина фотографиях</li>
-            <li class="about-us__item">Связано вручную с любовью и умилением</li>
-            <li class="about-us__item">Поддержка отечественного производителя</li>
-            <li class="about-us__item">Поставляется в подарочной упаковке</li>
+            <li class="about-us__item about-us__item--materials">
+              <p class="about-us__columns">Экологически чистые материалы</p>
+            </li>
+            <li class="about-us__item">
+              <p class="about-us__columns">Скандинавский стиль по российской цене</p>
+            </li>
+            <li class="about-us__item">
+              <p class="about-us__columns">Увеличивает лайки<br> на фотографиях
+            </li>
+            <li class="about-us__item">
+              <p class="about-us__columns">Связано вручную с любовью и умилением</p>
+            </li>
+            <li class="about-us__item">
+              <p class="about-us__columns">Поддержка отечественного производителя
+            </li>
+            <li class="about-us__item">
+              <p class="about-us__columns">Поставляется в подарочной упаковке</p>
+            </li>
           </ul>
         </div>
       </section>
@@ -114,7 +131,7 @@
       <section class="main__reviews reviews wrapper">
         <div class="reviews__wrapper">
           <h3 class="reviews__title">Отзывы</h3>
-          <p class="reviews__message">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="reviews__message">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,<br class="reviews__message-space"> и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <div class="review__column">
             <b class="reviews__name">Анастасия Красильникова</b>
             <p class="reviews__email">@misssssiskras</p>
@@ -132,7 +149,7 @@
           <h3 class="contacts__title">Контакты</h3>
           <div class="contacts__addresses">
             <p class="contacts__data">e-mail: <span class="contacts__column">info@mimimishkashop.ru</span></p>
-            <p class="contacts__data">адрес: <span class="contacts__column">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span></p>
+            <p class="contacts__data">адрес: <span class="contacts__column">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</span></p>
           </div>
           <a class="contacts__button button" href="#">Напишите нам</a>
         </div>

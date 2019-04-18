@@ -1,6 +1,7 @@
 .nav__management {
   position: relative;
-  padding: 19px 0;
+  padding: 17px 0;
+  padding-top: 21px;
 
   text-align: center;
 
@@ -66,6 +67,42 @@
   }
 }
 
+.nav__link--basket {
+  position: relative;
+}
+
+.nav__link--basket::after {
+  content: "";
+  position: absolute;
+  left: 32px;
+  top: 35px;
+  width: 21px;
+  height: 18px;
+
+  background-image: url("../../img/icon-cart.svg");
+  background-repeat: no-repeat;
+
+  opacity: 0.2;
+}
+
+.nav__item--search {
+  position: relative;
+}
+
+.nav__item--search::after {
+  content: "";
+  position: absolute;
+  left: 32px;
+  top: 35px;
+  width: 18px;
+  height: 19px;
+
+  background-image: url("../../img/icon-search.svg");
+  background-repeat: no-repeat;
+
+  opacity: 0.2;
+}
+
 .nav__search {
   padding: 30px;
   padding-left: 76px;
@@ -107,6 +144,10 @@
 
 @media (min-width: $tablet-width) {
   .nav {
+    background-color: #f1f1f1;
+  }
+
+  .nav--index {
     background-color: #fafafa;
   }
 
@@ -140,9 +181,7 @@
   }
 
   .nav__list-nav {
-    width: 63%;
-
-    background-color: #fafafa;
+    width: 50%;
 
     order: 1;
   }
@@ -156,14 +195,13 @@
   }
 
   .nav__delivery {
-    width: 37%;
+    width: 250px;
     padding: 17px 0;
+    padding-left: 103px;
 
     font-size: 15px;
     line-height: 24px;
     color: #444444;
-
-    background-color: #fafafa;
 
     order: 2;
   }
@@ -187,6 +225,10 @@
     padding-left: 84px;
   }
 
+  .nav__link--form {
+    padding-left: 37px;
+  }
+
   .nav__item--search {
     border-right: 1px solid #ececec;
     border-left: 1px solid #ececec;
@@ -199,9 +241,18 @@
 
     border: none;
   }
+
+  .nav__search::placeholder {
+    font-size: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .nav {
+    width: 1150px;
+    margin: 0 auto;
+  }
+
   .nav__wrapper {
     display: flex;
     width: 1150px;
@@ -212,13 +263,11 @@
     display: flex;
     min-width: 473px;
 
-    background-color: #fafafa;
-
     order: 2;
   }
 
   .nav__management {
-    min-width: 264px;
+    min-width: 262px;
     padding: 0;
 
     text-align: center;
@@ -232,7 +281,7 @@
 
   .nav__list-nav {
     width: 437px;
-    padding-left: 24px;
+    padding-left: 51px;
 
     background-color: #ffffff;
 
@@ -242,7 +291,7 @@
   }
 
   .nav__list-user {
-    min-width: 425px;
+    min-width: 399px;
 
     order: 2;
   }
@@ -250,7 +299,7 @@
   .nav__delivery {
     min-width: 450px;
     margin-left: auto;
-    padding-right: 76px;
+    padding-right: 50px;
 
     text-align: right;
   }
@@ -269,7 +318,9 @@
   }
 
   .nav__link--desktop-bottom {
-    padding: 15px 25px;
+    margin-right: 10px;
+    padding: 18px 0;
+    padding-left: 52px;
     font-size: 15px;
   }
 

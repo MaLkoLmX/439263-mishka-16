@@ -1,13 +1,58 @@
 .main-header {
-  padding: 65px 0;
+  position: relative;
+  padding: 70px 0;
+  padding-bottom: 75px;
 
   background-color: #f1f1f1;
 }
 
 .main-header__title {
+  margin: 0;
+
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
   color: #000000;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    padding: 37px 0;
+    padding-bottom: 78px;
+  }
+
+  .main-header::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    left: 0;
+    height: 24px;
+    background-image: url("../../img/bg-zigzag-fill.svg");
+  }
+
+  .main-header__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    width: 1150px;
+    margin: 0 auto;
+    margin-bottom: 127px;
+    padding-top: 32px;
+    padding-bottom: 105px;
+  }
+
+  .main-header--form {
+    margin-bottom: 122px;
+  }
+
+  .main-header__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

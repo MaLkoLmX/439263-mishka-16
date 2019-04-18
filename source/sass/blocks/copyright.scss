@@ -1,8 +1,9 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  width: 182px;
+  width: 192px;
   margin: 0 auto;
+  padding-top: 2px;
 }
 
 .copyright__designed {
@@ -15,5 +16,13 @@
 @media (min-width: $tablet-width) {
   .copyright {
     margin: 0;
+    padding-top: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    padding-right: 73px;
+    width: 185px;
   }
 }

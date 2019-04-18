@@ -14,10 +14,21 @@
   .footer {
     display: flex;
     justify-content: space-around;
-    padding: 63px 0;
+    padding: 55px 0;
   }
 
   .footer__logo-footer {
-    width: 170px;
+    width: 182px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    justify-content: space-between;
+  }
+
+  .footer__logo-footer {
+    width: 102px;
+    padding-left: 78px;
   }
 }
