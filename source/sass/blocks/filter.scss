@@ -308,6 +308,10 @@
     margin-bottom: 52px;
   }
 
+  .filter__list--checkbox .filter__item:nth-child(2n-1) {
+    width: 264px;
+  }
+
   .filter__wrapper {
     display: flex;
     margin-bottom: 39px;
@@ -400,12 +404,6 @@
   }
 }
 
-@media (max-width: $tablet-width-only) {
-  .filter__list--checkbox .filter__item:nth-child(2n-1) {
-    width: 264px;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .filter {
     padding: 0;
@@ -454,6 +452,10 @@
 
   .filter__list--checkbox .filter__item {
     margin-right: 143px;
+    width: 120px;
+  }
+
+  .filter__list--checkbox .filter__item:nth-child(2n-1) {
     width: 120px;
   }
 
