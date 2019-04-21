@@ -148,12 +148,25 @@
   }
 
   .nav--index {
-    background-color: #fafafa;
+    background-color: #ffffff;
   }
 
   .nav__wrapper {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .nav__wrapper-bottom {
+    width: 50%;
+    padding-top: 17px;
+
+    background-color: #f1f1f1;
+
+    order: 2;
+  }
+
+  .nav__wrapper-bottom--index {
+    background-color: #fafafa;
   }
 
   .nav__toggle {
@@ -183,7 +196,13 @@
   .nav__list-nav {
     width: 50%;
 
+    background-color: #f1f1f1;
+
     order: 1;
+  }
+
+  .nav__list-nav--index {
+    background-color: #fafafa;
   }
 
   .nav__list-user {
@@ -196,7 +215,6 @@
 
   .nav__delivery {
     width: 250px;
-    padding: 17px 0;
     padding-left: 103px;
 
     font-size: 15px;
@@ -221,8 +239,9 @@
   }
 
   .nav__link--basket {
-    padding: 32px;
-    padding-left: 84px;
+    padding: 31px;
+    padding-bottom: 33px;
+    padding-left: 82px;
   }
 
   .nav__link--form {
@@ -232,6 +251,11 @@
   .nav__item--search {
     border-right: 1px solid #ececec;
     border-left: 1px solid #ececec;
+  }
+
+  .nav__item--search::after {
+    left: 34px;
+    top: 37px;
   }
 
   .nav__search {
@@ -248,20 +272,21 @@
 }
 
 @media (min-width: $desktop-width) {
-  .nav {
-    width: 1150px;
-    margin: 0 auto;
-  }
-
   .nav__wrapper {
     display: flex;
-    width: 1150px;
-    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .nav__wrapper-bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
   }
 
   .nav__list-offers {
     display: flex;
-    min-width: 473px;
+    min-width: 550px;
 
     order: 2;
   }
@@ -272,33 +297,37 @@
 
     text-align: center;
 
+    border: none;
     order: 1;
   }
 
   .nav__logo {
-    margin: 22px auto;
+    width: 149px;
+    height: 72px;
+    margin: 0;
+    margin-left: 13px;
+    margin-top: 10px;
   }
 
   .nav__list-nav {
     width: 437px;
-    padding-left: 51px;
+    padding-left: 47px;
 
     background-color: #ffffff;
-
-    border-bottom: 1px solid #ececec;
 
     order: 0;
   }
 
   .nav__list-user {
-    min-width: 399px;
+    min-width: 397px;
 
+    border: none;
     order: 2;
   }
 
   .nav__delivery {
     min-width: 450px;
-    margin-left: auto;
+    padding-top: 17px;
     padding-right: 50px;
 
     text-align: right;

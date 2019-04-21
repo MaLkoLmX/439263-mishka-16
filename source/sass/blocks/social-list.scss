@@ -5,7 +5,7 @@
   justify-content: space-between;
   width: 145px;
   margin: 0 auto;
-  margin-bottom: 49px;
+  margin-bottom: 46px;
   padding: 0;
 
   list-style: none;
@@ -15,7 +15,7 @@
 .social-list::after {
   content: "";
   position: absolute;
-  bottom: -25px;
+  bottom: -21px;
   left: -55px;
   width: 260px;
   height: 1px;
@@ -31,9 +31,13 @@
   text-decoration: none;
 }
 
+.social-list__link--twitter {
+  margin-right: 7px;
+}
+
 @media (min-width: $tablet-width) {
   .social-list {
-    width: 145px;
+    width: 140px;
     margin: 0;
 
     border: none;
@@ -41,6 +45,10 @@
 
   .social-list::after {
     display: none;
+  }
+
+  .social-list__link--twitter {
+    margin-right: 0;
   }
 }
 

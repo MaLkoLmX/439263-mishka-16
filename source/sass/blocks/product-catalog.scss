@@ -105,12 +105,14 @@
   }
 
   .product-catalog__image {
-    width: 50%;
+    width: 334px;
+    height: 333px;
   }
 
   .product-catalog__name {
     width: 231px;
     margin-left: 26px;
+    margin-bottom: 7px;
 
     font-size: 20px;
     line-height: 24px;
@@ -124,7 +126,7 @@
   }
 
   .product-catalog__price {
-    margin-left: 32px;
+    margin-left: 31px;
     padding: 22px 0;
 
     font-size: 17px;
@@ -179,11 +181,11 @@
   }
 
   .product-catalog__price {
-    margin: 0 30px;
+    margin: 0 27px;
     padding-bottom: 25px;
   }
 
   .product-catalog__price::after {
-    right: -1px;
+    right: 3px;
   }
 }

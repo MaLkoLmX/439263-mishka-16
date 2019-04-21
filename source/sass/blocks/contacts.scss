@@ -13,7 +13,7 @@
 .contacts__title {
   margin: 0;
   margin-bottom: 26px;
-  padding: 0 30px;
+  padding: 0 28px;
 
   font-size: 18px;
   line-height: 30px;
@@ -64,6 +64,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/map-mobile@1x.jpg");
+  }
 }
 
 .contacts__iframe {
@@ -78,6 +82,12 @@
   margin-left: -131px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .contacts__button {
+    font-size: 18px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
     margin-bottom: 57px;
@@ -86,12 +96,13 @@
 
   .contacts__wrapper {
     width: 669px;
-    padding-top: 60px;
+    padding-top: 57px;
   }
 
   .contacts__title {
     position: relative;
     margin-bottom: 48px;
+    margin-left: -5px;
     padding: 0;
 
     font-size: 43px;
@@ -132,6 +143,12 @@
 
   .contacts__map {
     margin-bottom: 55px;
+
+    background-image: url("../../img/map-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/map-tablet@1x.jpg");
+    }
   }
 
   .contacts__button {
@@ -148,7 +165,7 @@
     flex-wrap: wrap;
     width: 1048px;
     margin: 0 auto;
-    padding-top: 70px;
+    padding-top: 80px;
     padding-bottom: 136px;
   }
 
@@ -156,7 +173,7 @@
     width: 350px;
     margin: 0;
     padding-top: 69px;
-    padding-left: 171px;
+    padding-left: 174px;
   }
 
   .contacts__title {
@@ -176,7 +193,7 @@
 
   .contacts__column {
     width: 225px;
-    margin-left: 29px;
+    margin-left: 25px;
   }
 
   .contacts__data:nth-child(2) {
@@ -186,11 +203,17 @@
 
   .contacts__map {
     position: absolute;
-    top: 70px;
+    top: 80px;
     right: 0;
     width: 527px;
     height: 455px;
     margin: 0;
+
+    background-image: url("../../img/map-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/map-desktop@1x.jpg");
+    }
   }
 
   .contacts__button {

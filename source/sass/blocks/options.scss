@@ -84,6 +84,7 @@
   display: block;
   width: 260px;
   margin: 0 auto;
+  padding-bottom: 5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -106,6 +107,10 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  .options__link--toys::after {
+    right: 34px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -117,5 +122,9 @@
 
   .options__link-wrapper {
     width: 450px;
+  }
+
+  .options__link {
+    min-height: 121px;
   }
 }

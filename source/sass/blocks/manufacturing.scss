@@ -42,7 +42,7 @@
 }
 
 .manufacturing__button {
-  width: 165px;
+  width: 160px;
 }
 
 @media (min-width: $tablet-width) {
@@ -68,8 +68,8 @@
   }
 
   .manufacturing__description {
-    margin-top: 29px;
-    margin-bottom: 38px;
+    margin-top: 31px;
+    margin-bottom: 36px;
     margin-left: 40px;
     margin-right: 36px;
 
@@ -101,7 +101,7 @@
   }
 
   .manufacturing__column {
-    width: 365px;
+    width: 366px;
     margin-top: 0;
     padding-top: 95px;
   }
@@ -118,12 +118,13 @@
   }
 
   .manufacturing__button {
-    width: 196px;
-    margin-left: 82px;
+    width: 195px;
+    margin-left: 81px;
   }
 
   .manufacturing__video {
     position: static;
+    display: flex;
     width: 682px;
     height: 455px;
   }
