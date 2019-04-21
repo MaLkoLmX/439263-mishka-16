@@ -3,6 +3,7 @@
   justify-content: space-between;
   width: 182px;
   margin: 0 auto;
+  padding-top: 2px;
 }
 
 .copyright__designed {
@@ -12,8 +13,21 @@
   color: #000000;
 }
 
+.copyright__academy {
+  margin-top: -5px;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     margin: 0;
+    padding-right: 10px;
+    padding-top: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    padding-right: 73px;
+    width: 185px;
   }
 }

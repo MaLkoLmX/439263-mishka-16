@@ -1,19 +1,21 @@
 .manufacturing {
   margin: 0 auto;
-  padding: 30px;
+  margin-bottom: 57px;
 }
 
 .manufacturing__wrapper {
   position: relative;
   width: 260px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 22px 0;
+  padding-bottom: 32px;
+
   border: 1px solid #ededed;
 }
 
 .manufacturing__title {
   margin: 0;
-  margin-bottom: 140px;
+  margin-bottom: 201px;
   padding-left: 90px;
 
   font-size: 17px;
@@ -24,13 +26,15 @@
 
 .manufacturing__video {
   position: absolute;
-  top: 60px;
+  top: 95px;
 
   background-color: #ededef;
 }
 
 .manufacturing__description {
-  margin: 30px;
+  margin: 33px;
+  margin-right: 35px;
+  margin-bottom: 26px;
 
   font-size: 13px;
   line-height: 24px;
@@ -38,38 +42,90 @@
 }
 
 .manufacturing__button {
-  width: 165px;
+  width: 160px;
 }
 
 @media (min-width: $tablet-width) {
+  .manufacturing {
+    margin-bottom: 63px;
+  }
+
   .manufacturing__wrapper {
     display: flex;
     flex-direction: column;
     width: 668px;
-  }
-
-  .manufacturing__column {
-    margin-top: 140px;
+    margin-top: 508px;
+    padding: 0;
+    padding-top: 37px;
+    padding-bottom: 45px;
   }
 
   .manufacturing__title {
     margin: 0;
+    padding-left: 105px;
+
+    font-size: 20px;
+  }
+
+  .manufacturing__description {
+    margin-top: 31px;
+    margin-bottom: 36px;
+    margin-left: 40px;
+    margin-right: 36px;
+
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .manufacturing__video {
-    top: 0;
+    top: -456px;
+    width: 100%;
+    height: 455px;
+  }
+
+  .manufacturing__button {
+    width: 552px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .manufacturing {
+    margin-bottom: 103px;
+  }
+
   .manufacturing__wrapper {
-    flex-direction: initial;
+    flex-direction: row-reverse;
     width: 1048px;
+    margin-top: 0;
+    padding: 0;
   }
 
   .manufacturing__column {
-    width: 367px;
+    width: 366px;
     margin-top: 0;
-    margin-left: 670px;
+    padding-top: 95px;
+  }
+
+  .manufacturing__title {
+    margin: 0 79px;
+    padding: 0;
+  }
+
+  .manufacturing__description {
+    margin-top: 34px;
+    margin-left: 79px;
+    margin-bottom: 46px;
+  }
+
+  .manufacturing__button {
+    width: 195px;
+    margin-left: 81px;
+  }
+
+  .manufacturing__video {
+    position: static;
+    display: flex;
+    width: 682px;
+    height: 455px;
   }
 }
