@@ -1,10 +1,11 @@
 .about-us__wrapper {
   padding: 28px;
+  padding-left: 29px;
 }
 
 .about-us__title {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 
   font-size: 25px;
   line-height: 30px;
@@ -20,7 +21,7 @@
 }
 
 .about-us__item {
-  padding-top: 83px;
+  margin-bottom: 30px;
   padding-right: 45px;
 
   font-size: 17px;
@@ -29,8 +30,46 @@
   color: #000000;
 }
 
+.about-us__item:last-child {
+  margin-bottom: 0;
+}
+
+.about-us__flower {
+  margin-left: 10px;
+}
+
+.about-us__money {
+  margin-bottom: 8px;
+}
+
+.about-us__heart {
+  margin-top: 5px;
+  margin-left: 9px;
+  margin-bottom: 3px;
+}
+
+.about-us__ball {
+  margin-left: 5px;
+  margin-top: 1px;
+}
+
+.about-us__rocket {
+  margin-top: 3px;
+  margin-left: -5px;
+  margin-bottom: 9px;
+}
+
+.about-us__gift {
+  margin-top: 1px;
+  margin-left: 4px;
+  margin-bottom: 2px;
+}
+
+.about-us__item svg {
+  fill: #63d1bb;
+}
+
 .about-us__item--materials {
-  padding-top: 58px;
   padding-right: 70px;
 }
 
@@ -40,6 +79,7 @@
 
 .about-us__columns {
   margin: 0;
+  margin-top: 14px;
 }
 
 @media (min-width: $tablet-width) {
@@ -60,17 +100,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 18px;
+    margin-bottom: 83px;
   }
 
   .about-us__item {
     width: 334px;
-    padding-top: 54px;
-    padding-bottom: 57px;
+    margin-bottom: 57px;
     padding-right: 0;
 
     font-size: 20px;
     line-height: 22px;
+  }
+
+  .about-us__item:nth-child(3n+3) {
+    margin-bottom: 0;
   }
 
   .about-us__columns {
@@ -123,7 +166,7 @@
 
   .about-us__list {
     width: 643px;
-    margin-bottom: 32px;
+    margin-bottom: 90px;
   }
 
   .about-us__item {

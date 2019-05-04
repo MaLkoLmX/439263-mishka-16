@@ -94,14 +94,15 @@
   .reviews {
     position: relative;
     width: 768px;
-    margin-bottom: 85px;
+    margin-bottom: 88px;
 
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/review@1x.jpg");
+      background-image: url("../../img/review@2x.jpg");
+      background-size: contain;
     }
   }
 
@@ -124,8 +125,8 @@
     width: 668px;
     margin: 0 auto;
     padding: 0 50px;
-    padding-top: 84px;
-    padding-bottom: 50px;
+    padding-top: 77px;
+    padding-bottom: 47px;
   }
 
   .reviews__title {

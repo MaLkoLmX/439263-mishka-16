@@ -14,7 +14,15 @@
 }
 
 .copyright__academy {
-  margin-top: -5px;
+  margin-top: -7px;
+  margin-left: 21px;
+}
+
+.copyright__icon {
+  width: 40px;
+  height: 40px;
+
+  fill: #63d1bb;
 }
 
 @media (min-width: $tablet-width) {
@@ -22,6 +30,14 @@
     margin: 0;
     padding-right: 10px;
     padding-top: 13px;
+  }
+
+  .copyright__academy {
+    margin-left: 24px;
+  }
+
+  .copyright__icon {
+    width: 37px;
   }
 }
 

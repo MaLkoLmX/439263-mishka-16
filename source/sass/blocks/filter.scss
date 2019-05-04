@@ -163,6 +163,7 @@
 }
 
 .filter__input {
+  position: relative;
   width: 259px;
   margin-top: 14px;
   padding-bottom: 15px;
@@ -170,17 +171,54 @@
   font-size: 17px;
   line-height: 18px;
   color: #444444;
+  font-family: "Open sans", "Arial", sans-serif;
 
   border: none;
   border-bottom: 2px solid #000000;
 }
 
 .filter__field--contacts .filter__input {
-  margin-top: 18px;
+  margin-top: 11px;
+}
+
+.filter__input--tel {
+  font-size: 19px;
+  line-height: 19px;
+}
+
+.filter__wrapper--tel::after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 2px;
+  width: 25px;
+  height: 24px;
+
+  background-image: url("../../img/icon-phone.svg");
+
+  opacity: 0.2;
+}
+
+.filter__wrapper--email::after {
+  content: "";
+  position: absolute;
+  right: 22px;
+  top: 2px;
+  width: 32px;
+  height: 26px;
+
+  background-image: url("../../img/icon-mail.svg");
+
+  opacity: 0.2;
 }
 
 .filter__field--contacts .filter__wrapper {
+  position: relative;
   margin-bottom: 30px;
+}
+
+.filter__wrapper .filter__input--email {
+  margin-top: 17px;
 }
 
 .filter__wrapper {
@@ -192,12 +230,13 @@
   width: 240px;
   height: 107px;
   margin-top: 20px;
-  padding: 16px;
+  padding: 15px;
   padding-right: 0;
 
   font-size: 17px;
   line-height: 18px;
   color: #444444;
+  font-family: "Open sans", "Arial", sans-serif;
 
   border: 2px solid #000000;
 }
@@ -222,6 +261,7 @@
   .filter {
     width: 100%;
     padding-top: 74px;
+    padding-bottom: 49px;
   }
 
   .filter__name {
@@ -231,6 +271,7 @@
 
   .filter__field--contacts .filter__name {
     width: 80px;
+    margin-top: 6px;
     margin-right: 106px;
   }
 
@@ -288,12 +329,12 @@
   }
 
   .filter__field--name {
-    padding: 14px 0;
-    padding-top: 66px;
+    padding: 16px 0;
+    padding-top: 60px;
   }
 
   .filter__field--text {
-    padding: 52px 0;
+    padding: 56px 0;
     padding-top: 66px;
   }
 
@@ -302,14 +343,14 @@
   }
 
   .filter__field--contacts .filter__wrapper {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
   }
 
   .filter__field-wrapper {
     width: 665px;
     margin: 0 auto;
-    padding-top: 65px;
-    padding-bottom: 10px;
+    padding-top: 60px;
+    padding-bottom: 15px;
   }
 
   .filter__list {
@@ -333,11 +374,16 @@
 
   .filter__wrapper {
     display: flex;
-    margin-bottom: 39px;
+    margin-bottom: 34px;
   }
 
   .filter__field--name .filter__wrapper {
     margin-left: 110px;
+  }
+
+  .filter__field--name .filter__name,
+  .filter__field--name .filter__label {
+    margin-top: 6px;
   }
 
   .filter__label {
@@ -351,11 +397,10 @@
     width: 100%;
     margin: 0;
     padding-left: 17px;
-    padding-bottom: 11px;
+    padding-bottom: 13px;
 
     font-size: 19px;
     line-height: 19px;
-    letter-spacing: 0.4px;
   }
 
   .filter__field--contacts .filter__input {
@@ -369,6 +414,9 @@
     margin: 0;
     margin-top: -16px;
     margin-left: 106px;
+
+    font-size: 19px;
+    line-height: 19px;
   }
 
   .filter__column {
@@ -449,12 +497,12 @@
   }
 
   .filter__field--name {
-    padding-top: 67px;
-    padding-bottom: 14px;
+    padding-top: 61px;
+    padding-bottom: 16px;
   }
 
   .filter__field--text {
-    padding-top: 66px;
+    padding-top: 68px;
     padding-bottom: 48px;
   }
 
@@ -498,6 +546,7 @@
   }
 
   .filter__field--contacts .filter__name {
+    margin-top: 7px;
     margin-right: 30px;
   }
 
@@ -507,6 +556,14 @@
 
   .filter__field--contacts .filter__input {
     width: 684px;
+  }
+
+  .filter__wrapper--email::after {
+    right: 112px;
+  }
+
+  .filter__wrapper--tel::after {
+    right: 117px;
   }
 
   .filter__text {
