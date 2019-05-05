@@ -189,8 +189,8 @@
 .filter__wrapper--tel::after {
   content: "";
   position: absolute;
-  right: 25px;
-  top: 2px;
+  right: 8px;
+  top: 36px;
   width: 25px;
   height: 24px;
 
@@ -202,8 +202,8 @@
 .filter__wrapper--email::after {
   content: "";
   position: absolute;
-  right: 22px;
-  top: 2px;
+  right: 4px;
+  top: 34px;
   width: 32px;
   height: 26px;
 
@@ -375,6 +375,16 @@
   .filter__wrapper {
     display: flex;
     margin-bottom: 34px;
+  }
+
+  .filter__wrapper--tel::after {
+    right: 25px;
+    top: 0;
+  }
+
+  .filter__wrapper--email::after {
+    right: 20px;
+    top: 1px;
   }
 
   .filter__field--name .filter__wrapper {

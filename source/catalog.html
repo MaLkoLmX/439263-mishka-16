@@ -48,191 +48,188 @@
       </symbol>
     </svg>
 
-    <header class="header">
-      <nav class="header__nav nav nav--index">
-        <div class="nav__wrapper">
-          <div class="nav__management">
-            <a class="nav__logo logo" href="index.html">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
-              </picture>
-            </a>
-            <button class="nav__toggle nav__toggle--noJS" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          </div>
+    <div class="add-opacity">
+      <header class="header">
+        <nav class="header__nav nav nav--index">
+          <div class="nav__wrapper">
+            <div class="nav__management">
+              <a class="nav__logo logo" href="index.html">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                  <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
+                </picture>
+              </a>
+              <button class="nav__toggle nav__toggle--noJS" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            </div>
 
-          <ul class="nav__list-nav nav__list--noJS">
-            <li class="nav__item">
-              <a class="nav__link nav__link--catalog nav__link--tablet-bottom" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link nav__link--form nav__link--tablet-bottom" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-
-          <ul class="nav__list-user nav__list--noJS">
-            <li class="nav__item nav__item--search">
-              <input class="nav__search" type="search" placeholder="Поиск по сайту">
-            </li>
-            <li class="nav__item">
-              <a class="nav__link nav__link--basket" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-
-          <div class="nav__wrapper-bottom">
-            <ul class="nav__list-offers nav__list--noJS">
-              <li class="nav__item nav__item--receipts">
-                <a class="nav__link nav__link--desktop-bottom" href="#">Новые поступления</a>
+            <ul class="nav__list-nav nav__list--noJS">
+              <li class="nav__item">
+                <a class="nav__link nav__link--catalog nav__link--tablet-bottom" href="catalog.html">Каталог товаров</a>
               </li>
-              <li class="nav__item nav__item--sell-out">
-                <a class="nav__link nav__link--desktop-bottom" href="#">Распродажа</a>
+              <li class="nav__item">
+                <a class="nav__link nav__link--form nav__link--tablet-bottom" href="form.html">Вязание на заказ</a>
               </li>
             </ul>
 
-            <span class="nav__delivery">Бесплатная доставка по России</span>
+            <ul class="nav__list-user nav__list--noJS">
+              <li class="nav__item nav__item--search">
+                <input class="nav__search" type="search" placeholder="Поиск по сайту">
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link--basket" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+
+            <div class="nav__wrapper-bottom">
+              <ul class="nav__list-offers nav__list--noJS">
+                <li class="nav__item nav__item--receipts">
+                  <a class="nav__link nav__link--desktop-bottom" href="#">Новые поступления</a>
+                </li>
+                <li class="nav__item nav__item--sell-out">
+                  <a class="nav__link nav__link--desktop-bottom" href="#">Распродажа</a>
+                </li>
+              </ul>
+
+              <span class="nav__delivery">Бесплатная доставка по России</span>
+            </div>
           </div>
         </nav>
-      </div>
-    </header>
-
-    <main class="main">
-      <h1 class="visually-hidden">Милые штуки ручной работы для дома</h1>
-      <header class="main__header main-header">
-        <h2 class="main-header__title">Каталог товаров</h2>
       </header>
 
-      <section class="main__product-catalog product-catalog">
-        <ul class="product-catalog__list">
-          <li class="product-catalog__item">
-            <a class="product-catalog__link" href="#">
-              <div class="product-catalog__wrapper">
-                <h4 class="product-catalog__name">Зайчик-попрыгайчик</h4>
-                <p class="product-catalog__specifications">Рост 30 см, вес 200 г</p>
-                <b class="product-catalog__price">1 200 руб.</b>
-              </div>
-              <picture>
-                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp, img/photo-hare-mobile@2x.webp 2x"> -->
+      <main class="main">
+        <h1 class="visually-hidden">Милые штуки ручной работы для дома</h1>
+        <header class="main__header main-header">
+          <h2 class="main-header__title">Каталог товаров</h2>
+        </header>
 
-                <source media="(min-width: 1200px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
-                <img class="product-catalog__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195" alt="Картинка товара">
-              </picture>
-            </a>
-          </li>
-          <li class="product-catalog__item">
-            <a class="product-catalog__link" href="#">
-              <div class="product-catalog__wrapper">
-                <h4 class="product-catalog__name">Корзинка для белья</h4>
-                <p class="product-catalog__specifications">Диаметр 15 см, высота 10 см</p>
-                <b class="product-catalog__price">690 руб.</b>
-              </div>
-              <picture>
-                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp, img/photo-bowl-mobile@2x.webp 2x"> -->
+        <section class="main__product-catalog product-catalog">
+          <ul class="product-catalog__list">
+            <li class="product-catalog__item modal__show">
+              <a class="product-catalog__link" href="#">
+                <div class="product-catalog__wrapper">
+                  <h4 class="product-catalog__name">Зайчик-попрыгайчик</h4>
+                  <p class="product-catalog__specifications">Рост 30 см, вес 200 г</p>
+                  <b class="product-catalog__price">1 200 руб.</b>
+                </div>
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp, img/photo-hare-mobile@2x.webp 2x"> -->
 
-                <source media="(min-width: 1200px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
-                <img class="product-catalog__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195" alt="Картинка товара">
-              </picture>
-            </a>
-          </li>
-          <li class="product-catalog__item">
-            <a class="product-catalog__link" href="#">
-              <div class="product-catalog__wrapper">
-                <h4 class="product-catalog__name">Большая корзинка для игрушек</h4>
-                <p class="product-catalog__specifications">Диаметр 30 см, высота 30 см</p>
-                <b class="product-catalog__price">1 500 руб.</b>
-              </div>
-              <picture>
-                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp, img/photo-toys-mobile@2x.webp 2x"> -->
+                  <source media="(min-width: 1200px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                  <img class="product-catalog__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195" alt="Картинка товара">
+                </picture>
+              </a>
+            </li>
+            <li class="product-catalog__item modal__show">
+              <a class="product-catalog__link" href="#">
+                <div class="product-catalog__wrapper">
+                  <h4 class="product-catalog__name">Корзинка для белья</h4>
+                  <p class="product-catalog__specifications">Диаметр 15 см, высота 10 см</p>
+                  <b class="product-catalog__price">690 руб.</b>
+                </div>
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp, img/photo-bowl-mobile@2x.webp 2x"> -->
 
-                <source media="(min-width: 1200px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-                <img class="product-catalog__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Картинка товара">
-              </picture>
-            </a>
-          </li>
-        </ul>
-      </section>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                  <img class="product-catalog__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195" alt="Картинка товара">
+                </picture>
+              </a>
+            </li>
+            <li class="product-catalog__item modal__show">
+              <a class="product-catalog__link" href="#">
+                <div class="product-catalog__wrapper">
+                  <h4 class="product-catalog__name">Большая корзинка для игрушек</h4>
+                  <p class="product-catalog__specifications">Диаметр 30 см, высота 30 см</p>
+                  <b class="product-catalog__price">1 500 руб.</b>
+                </div>
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp, img/photo-toys-mobile@2x.webp 2x"> -->
 
-      <section class="main__manufacturing manufacturing">
-        <div class="manufacturing__wrapper">
-          <div class="manufacturing__column">
-            <div class="manufacturing__wrapper-svg">
-              <svg class="manufacturing__icon-video" width="32" height="22">
-                <use xlink:href="#icon-video"></use>
-              </svg>
+                  <source media="(min-width: 1200px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                  <img class="product-catalog__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Картинка товара">
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="main__manufacturing manufacturing">
+          <div class="manufacturing__wrapper">
+            <div class="manufacturing__column">
               <h3 class="manufacturing__title">Процесс производства</h3>
+              <p class="manufacturing__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+              <a class="manufacturing__button button" href="#">Сделать заказ</a>
             </div>
-            <p class="manufacturing__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <a class="manufacturing__button button" href="#">Сделать заказ</a>
-          </div>
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/video-mobile@1x.webp, img/video-mobile@2x.webp 2x"> -->
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp, img/video-mobile@2x.webp 2x"> -->
 
-            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x img/video-tablet@2x.jpg 2x">
-            <img class="manufacturing__video" src="img/video-mobile@1x.jpg"  srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видео процесса производства">
-          </picture>
-          <svg class="manufacturing__icon-play" width="32" height="32">
-            <use xlink:href="#icon-play"></use>
-          </svg>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <a class="footer__logo-footer" href="index.html">
-          <img class="footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип Мишка">
-        </a>
-
-        <ul class="footer__social-list social-list">
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
-              <span class="visually-hidden">Instagram</span>
-              <svg class="social-list__insta" width="22" height="21">
-                <use xlink:href="#icon-insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
-              <span class="visually-hidden">FaceBook</span>
-              <svg class="social-list__facebook" width="15" height="28">
-                <use xlink:href="#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--twitter" href="#">
-              <span class="visually-hidden">Twitter</span>
-              <svg class="social-list__twitter" width="23" height="20">
-                <use xlink:href="#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-
-        <div class="footer__copyright copyright">
-          <b class="copyright__designed">Разработано</b>
-          <a class="copyright__academy" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">Логотип Академии</span>
-            <svg class="copyright__icon" width="27" height="34">
-              <use xlink:href="#htmlacademy"></use>
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x img/video-tablet@2x.jpg 2x">
+              <img class="manufacturing__video" src="img/video-mobile@1x.jpg"  srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видео процесса производства">
+            </picture>
+            <svg class="manufacturing__icon-play" width="32" height="32">
+              <use xlink:href="#icon-play"></use>
             </svg>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <a class="footer__logo-footer" href="index.html">
+            <img class="footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип Мишка">
           </a>
+
+          <ul class="footer__social-list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Instagram</span>
+                <svg class="social-list__insta" width="22" height="21">
+                  <use xlink:href="#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">FaceBook</span>
+                <svg class="social-list__facebook" width="15" height="28">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--twitter" href="#">
+                <span class="visually-hidden">Twitter</span>
+                <svg class="social-list__twitter" width="23" height="20">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer__copyright copyright">
+            <b class="copyright__designed">Разработано</b>
+            <a class="copyright__academy" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="visually-hidden">Логотип Академии</span>
+              <svg class="copyright__icon" width="27" height="34">
+                <use xlink:href="#htmlacademy"></use>
+              </svg>
+            </a>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <section class="add modal">
       <h2 class="add__title">Добавить в корзину</h2>

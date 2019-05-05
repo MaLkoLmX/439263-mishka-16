@@ -1,12 +1,13 @@
 .add {
   display: none;
   position: absolute;
-  top: 1050px;
+  top: 1361px;
   left: 50%;
   width: 320px;
   margin: 0 auto;
   margin-left: -160px;
-  padding: 45px 0;
+  padding-top: 31px;
+  padding-bottom: 49px;
 
   background-color: #ffffff;
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
@@ -20,19 +21,28 @@
   animation: bounce 0.6s;
 }
 
+.add--opacity {
+  opacity: 0.1;
+}
+
 .add__title {
   display: block;
-  width: 150px;
+  width: 143px;
   margin: 0 auto;
+  margin-bottom: 12px;
 
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
+  letter-spacing: -0.6px;
 }
 
 .add__size {
+  margin: 0;
+  margin-bottom: 23px;
+
   font-size: 15px;
   line-height: 30px;
   color: #444444;
@@ -41,7 +51,7 @@
 
 .add__size-list {
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 35px;
   padding: 0;
 
   list-style: none;
@@ -53,8 +63,8 @@
 }
 
 .add__size-button {
-  width: 80px;
-  padding: 18px 0;
+  width: 85px;
+  padding: 15px 0;
 
   font-size: 17px;
   line-height: 17px;
@@ -77,12 +87,14 @@
 
 @media (min-width: $tablet-width) {
   .add {
+    top: 1531px;
     width: 568px;
-
     margin-left: -284px;
+    padding-top: 33px;
   }
 
   .add__title {
+    margin-bottom: 15px;
     width: 100%;
 
     font-size: 30px;
@@ -92,14 +104,20 @@
   }
 
   .add__size {
+    margin-bottom: 22px;
+
     font-size: 17px;
   }
 
   .add__size-button {
-    width: 112px;
+    width: 115px;
+  }
+
+  .add__size-list {
+    margin-bottom: 32px;
   }
 
   .add__button {
-    width: 350px;
+    width: 325px;
   }
 }

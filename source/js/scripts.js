@@ -4,7 +4,6 @@ var listOffers = document.querySelector(".nav__list-offers");
 var toggle = document.querySelector(".nav__toggle");
 
 var button = document.querySelector(".modal__show");
-var modal = document.querySelector(".add");
 
 toggle.classList.remove("nav__toggle--noJS");
 listNav.classList.remove("nav__list--noJS");
@@ -19,14 +18,21 @@ toggle.addEventListener("click", function(evt) {
   listUser.classList.toggle("nav__list--opened");
 });
 
-button.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  modal.classList.add("add--show");
-});
+if (button) {
+  var modal = document.querySelector(".add");
+  var shadow = document.querySelector(".add-opacity");
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
+  button.addEventListener("click", function(evt) {
     evt.preventDefault();
-    modal.classList.remove("add--show");
-  }
-});
+    modal.classList.add("add--show");
+    shadow.classList.add("add--opacity");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      modal.classList.remove("add--show");
+      shadow.classList.remove("add--opacity");
+    }
+  });
+}
