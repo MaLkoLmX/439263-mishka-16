@@ -1,5 +1,23 @@
 .add {
+  display: none;
+  position: absolute;
+  top: 1050px;
+  left: 50%;
+  width: 320px;
+  margin: 0 auto;
+  margin-left: -160px;
+  padding: 45px 0;
+
   background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+
+  z-index: 10;
+}
+
+.add--show {
+  display: block;
+
+  animation: bounce 0.6s;
 }
 
 .add__title {
@@ -42,6 +60,7 @@
   line-height: 17px;
   font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
 
   background-color: #ffffff;
 
@@ -54,4 +73,33 @@
   background-color: #63d1bb;
 
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .add {
+    width: 568px;
+
+    margin-left: -284px;
+  }
+
+  .add__title {
+    width: 100%;
+
+    font-size: 30px;
+    line-height: 57px;
+
+    text-align: center;
+  }
+
+  .add__size {
+    font-size: 17px;
+  }
+
+  .add__size-button {
+    width: 112px;
+  }
+
+  .add__button {
+    width: 350px;
+  }
 }
