@@ -14,15 +14,26 @@
 }
 
 .copyright__academy {
-  margin-top: -7px;
+  margin-top: -9px;
   margin-left: 21px;
+
+  stroke: #63d1bb;
+
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
+    stroke: #46c1ae;
+  }
+
+  &:active .copyright__icon {
+    stroke: #46c1ae;
+
+    opacity: 0.3;
+  }
 }
 
 .copyright__icon {
   width: 40px;
   height: 40px;
-
-  fill: #63d1bb;
 }
 
 @media (min-width: $tablet-width) {

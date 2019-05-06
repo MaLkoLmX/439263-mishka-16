@@ -105,6 +105,20 @@
   color: #000000;
 }
 
+.filter__input::placeholder,
+.filter__text::placeholder {
+  color: rgba(68, 68, 68, 0.302);
+}
+
+.filter__input,
+.filter__text {
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: #62d1ba;
+  }
+}
+
 .filter__input-radio + .filter__indicator-radio {
   position: absolute;
   width: 33px;
@@ -114,7 +128,7 @@
 
   background-color: #ffffff;
 
-  border: 2px solid #000000;
+  border: 2px solid #444444;
   border-radius: 50%;
 }
 
@@ -140,7 +154,7 @@
 
   background-color: #ffffff;
 
-  border: 2px solid #000000;
+  border: 2px solid #444444;
 }
 
 .filter__input-checkbox:checked + .filter__indicator-checkbox::after {
@@ -153,6 +167,23 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 23px 17px;
+}
+
+.filter__input-radio:hover + .filter__indicator-radio,
+.filter__input-radio:focus + .filter__indicator-radio,
+.filter__input-checkbox:hover + .filter__indicator-checkbox,
+.filter__input-checkbox:focus + .filter__indicator-checkbox {
+  border-color: #62d1ba;
+}
+
+.filter__input-radio:active + .filter__indicator-radio,
+.filter__input-checkbox:active + .filter__indicator-checkbox {
+  border-color: #c7c7c7;
+}
+
+.filter__input-radio:focus + .filter__indicator-radio,
+.filter__input-checkbox:focus + .filter__indicator-checkbox {
+  outline: thin dotted;
 }
 
 .filter__label {
@@ -186,28 +217,36 @@
   line-height: 19px;
 }
 
-.filter__wrapper--tel::after {
-  content: "";
-  position: absolute;
-  right: 8px;
-  top: 36px;
-  width: 25px;
-  height: 24px;
-
-  background-image: url("../../img/icon-phone.svg");
-
-  opacity: 0.2;
-}
-
-.filter__wrapper--email::after {
-  content: "";
+.filter__email-icon {
   position: absolute;
   right: 4px;
   top: 34px;
   width: 32px;
   height: 26px;
 
-  background-image: url("../../img/icon-mail.svg");
+  opacity: 0.2;
+}
+
+.filter__wrapper--tel,
+.filter__wrapper--email {
+  &:hover .filter__tel-icon,
+  &:focus .filter__tel-icon,
+  &:active .filter__tel-icon,
+  &:hover .filter__email-icon,
+  &:focus .filter__email-icon,
+  &:active .filter__email-icon {
+    fill: #62d1ba;
+
+    opacity: 1;
+  }
+}
+
+.filter__tel-icon {
+  position: absolute;
+  right: 8px;
+  top: 36px;
+  width: 25px;
+  height: 24px;
 
   opacity: 0.2;
 }
@@ -466,6 +505,16 @@
     background-size: 40px 22px;
   }
 
+  .filter__tel-icon {
+    right: 25px;
+    top: 2px;
+  }
+
+  .filter__email-icon {
+    right: 20px;
+    top: 1px;
+  }
+
   .filter__button {
     width: 236px;
     margin: 0;
@@ -586,6 +635,14 @@
     width: 707px;
     margin: 0 auto;
     margin-bottom: 50px;
+  }
+
+  .filter__tel-icon {
+    right: 117px;
+  }
+
+  .filter__email-icon {
+    right: 112px;
   }
 
   .filter__button {

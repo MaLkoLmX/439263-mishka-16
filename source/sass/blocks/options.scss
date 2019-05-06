@@ -75,8 +75,15 @@
 }
 
 .options__link--interior:focus::after,
-.options__link--toys:focus::after {
+.options__link--toys:focus::after,
+.options__link--interior:hover::after,
+.options__link--toys:hover::after {
   opacity: 0.7;
+}
+
+.options__link--interior:active::after,
+.options__link--toys:active::after {
+  opacity: 0.3;
 }
 
 .options__link-wrapper {
