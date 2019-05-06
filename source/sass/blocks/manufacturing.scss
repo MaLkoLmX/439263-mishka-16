@@ -15,13 +15,18 @@
 
 .manufacturing__title {
   margin: 0;
-  margin-bottom: 201px;
-  padding-left: 90px;
+  margin-left: 26px;
+  padding-left: 64px;
+  padding-bottom: 167px;
 
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
   color: #000000;
+
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+  background-position: 8px 6px;
 }
 
 .manufacturing__video {
@@ -45,6 +50,24 @@
   width: 160px;
 }
 
+.manufacturing__icon-video {
+  width: 37px;
+  height: 43px;
+  margin-left: 33px;
+
+  fill: #63d1bb;
+}
+
+.manufacturing__icon-play {
+  position: absolute;
+  top: 130px;
+  left: 83px;
+  width: 101px;
+  height: 77px;
+
+  cursor: pointer;
+}
+
 @media (min-width: $tablet-width) {
   .manufacturing {
     margin-bottom: 63px;
@@ -62,13 +85,17 @@
 
   .manufacturing__title {
     margin: 0;
-    padding-left: 105px;
+    margin-left: 29px;
+    padding-left: 78px;
+    padding-bottom: 32px;
 
     font-size: 20px;
+
+    background-position: 13px -5px;
   }
 
   .manufacturing__description {
-    margin-top: 31px;
+    margin-top: 0;
     margin-bottom: 36px;
     margin-left: 40px;
     margin-right: 36px;
@@ -86,6 +113,17 @@
   .manufacturing__button {
     width: 552px;
   }
+
+  .manufacturing__icon-video {
+    width: 37px;
+    height: 29px;
+    margin-left: 40px;
+  }
+
+  .manufacturing__icon-play {
+    top: -265px;
+    left: 283px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -100,15 +138,26 @@
     padding: 0;
   }
 
+  .manufacturing__wrapper-svg {
+    flex-direction: column;
+  }
+
   .manufacturing__column {
     width: 366px;
     margin-top: 0;
-    padding-top: 95px;
+  }
+
+  .manufacturing__icon-video {
+    margin-left: 79px;
+    margin-bottom: 23px;
   }
 
   .manufacturing__title {
     margin: 0 79px;
     padding: 0;
+    padding-top: 95px;
+
+    background-position: 0 42px;
   }
 
   .manufacturing__description {
@@ -127,5 +176,10 @@
     display: flex;
     width: 682px;
     height: 455px;
+  }
+
+  .manufacturing__icon-play {
+    top: 190px;
+    left: 291px;
   }
 }
