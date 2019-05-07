@@ -66,6 +66,19 @@
   height: 77px;
 
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    width: 121px;
+    height: 92px;
+  }
+
+  &:active {
+    width: 81px;
+    height: 62px;
+
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

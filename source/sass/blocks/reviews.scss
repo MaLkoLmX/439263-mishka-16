@@ -70,6 +70,15 @@
 
   border: 1px solid #ececec;
   vertical-align: middle;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__arrow--forth {

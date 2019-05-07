@@ -29,6 +29,19 @@
 
 .social-list__link {
   text-decoration: none;
+
+  fill: #221f1f;
+
+  &:hover .social-list__icon,
+  &:focus .social-list__icon {
+    fill: #46c1ae;
+  }
+
+  &:active .social-list__icon {
+    fill: #46c1ae;
+
+    opacity: 0.3;
+  }
 }
 
 .social-list__insta {

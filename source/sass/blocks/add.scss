@@ -75,6 +75,15 @@
   background-color: #ffffff;
 
   border: 2px solid #ececec;
+
+  &:hover,
+  &:focus {
+    border-color: #c7c7c7;
+  }
+}
+
+.add__size-button--active {
+  border-color: #62d1ba;
 }
 
 .add__button {
