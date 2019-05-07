@@ -107,6 +107,19 @@
   fill: #221f1f;
 }
 
+.nav__search::placeholder {
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
 .nav__search {
   padding: 30px;
   padding-left: 76px;
