@@ -104,10 +104,19 @@
     position: relative;
     width: 768px;
     margin-bottom: 88px;
+  }
 
+  .reviews__background {
+    position: absolute;
+    width: 350px;
+    height: 455px;
+
+    background-color: #f7f7f7;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left;
+
+    z-index: -1;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");
@@ -227,6 +236,7 @@
   }
 
   .reviews__controller {
+    margin-top: 2px;
     margin-left: auto;
   }
 

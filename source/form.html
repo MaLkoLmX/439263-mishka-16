@@ -6,62 +6,60 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
   </head>
 
   <body>
     <header class="header">
       <nav class="header__nav nav nav--index">
-        <div class="nav__wrapper">
-          <div class="nav__management">
-            <a class="nav__logo logo" href="index.html">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
-              </picture>
-            </a>
-            <button class="nav__toggle nav__toggle--noJS" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          </div>
-
-          <ul class="nav__list-nav nav__list--noJS">
-            <li class="nav__item">
-              <a class="nav__link nav__link--catalog nav__link--tablet-bottom" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link nav__link--form nav__link--tablet-bottom" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-
-          <ul class="nav__list-user nav__list--noJS">
-            <li class="nav__item nav__item--search">
-              <svg class="nav__search-icon" width="18" height="19">
-                <use xlink:href="img/sprite.svg#icon-search"></use>
+        <div class="nav__management">
+          <a class="nav__logo logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
+            </picture>
+          </a>
+          <button class="nav__toggle nav__toggle--noJS" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <ul class="nav__list-nav nav__list--noJS">
+          <li class="nav__item">
+            <a class="nav__link nav__link--catalog nav__link--tablet-bottom" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--form nav__link--tablet-bottom" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="nav__list-user nav__list--noJS">
+          <li class="nav__item nav__item--search">
+            <svg class="nav__search-icon" width="18" height="19">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+            <input class="nav__search" type="search" placeholder="Поиск по сайту">
+          </li>
+          <li class="nav__item nav__item--basket">
+            <a class="nav__link nav__link--basket" href="#">
+              <svg class="nav__cart-icon" width="21" height="18">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
               </svg>
-              <input class="nav__search" type="search" placeholder="Поиск по сайту">
+              Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <div class="nav__wrapper-bottom">
+          <ul class="nav__list-offers nav__list--noJS">
+            <li class="nav__item nav__item--receipts">
+              <a class="nav__link nav__link--desktop-bottom" href="#">Новые поступления</a>
             </li>
-            <li class="nav__item nav__item--basket">
-              <a class="nav__link nav__link--basket" href="#">
-                <svg class="nav__cart-icon" width="21" height="18">
-                  <use xlink:href="img/sprite.svg#icon-cart"></use>
-                </svg>
-                Корзина: пока пуста</a>
+            <li class="nav__item nav__item--sell-out">
+              <a class="nav__link nav__link--desktop-bottom" href="#">Распродажа</a>
             </li>
           </ul>
-
-          <div class="nav__wrapper-bottom">
-            <ul class="nav__list-offers nav__list--noJS">
-              <li class="nav__item nav__item--receipts">
-                <a class="nav__link nav__link--desktop-bottom" href="#">Новые поступления</a>
-              </li>
-              <li class="nav__item nav__item--sell-out">
-                <a class="nav__link nav__link--desktop-bottom" href="#">Распродажа</a>
-              </li>
-            </ul>
-
-            <span class="nav__delivery">Бесплатная доставка по России</span>
-          </div>
-        </nav>
-      </div>
+          <span class="nav__delivery">Бесплатная доставка по России</span>
+        </div>
+      </nav>
     </header>
 
     <main class="main">
@@ -163,14 +161,14 @@
         <div class="filter__field filter__field--contacts">
           <div class="filter__field-wrapper">
             <p class="filter__wrapper filter__wrapper--tel">
-              <label class="filter__name" for="tel">Тел<span class="filter__name-line"></span></label>
+              <label class="filter__name" for="tel">Тел<span class="filter__name-line filter__name-line--tel"></span></label>
               <input class="filter__input filter__input--tel" id="tel" type="text" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
               <svg class="filter__tel-icon" width="25" height="24">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
             </p>
             <p class="filter__wrapper filter__wrapper--email">
-              <label class="filter__name" for="email">E-mail<span class="filter__name-line"></span></label>
+              <label class="filter__name" for="email">E-mail<span class="filter__name-line filter__name-line--email"></span></label>
               <input class="filter__input filter__input--email" id="email" type="text" name="e-mail" placeholder="Ваш Email*">
               <svg class="filter__email-icon" width="32" height="26">
                 <use xlink:href="img/sprite.svg#icon-mail"></use>
