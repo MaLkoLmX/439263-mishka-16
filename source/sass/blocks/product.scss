@@ -132,12 +132,17 @@
   }
 
   .product__table {
+    width: 290px;
     margin-bottom: 56px;
   }
 
   .product__column {
     display: flex;
     flex-direction: column;
+  }
+
+  .product__column--first-column {
+    width: 95px;
   }
 
   .product__feature {
@@ -191,8 +196,8 @@
   .product__title-wrapper {
     flex-direction: row-reverse;
     position: absolute;
-    left: 19px;
-    width: 680px;
+    left: 18px;
+    width: 678px;
   }
 
   .product__title {
@@ -212,7 +217,11 @@
   }
 
   .product__table {
-    margin-bottom: 110px;
+    margin-bottom: 107px;
+  }
+
+  .product__line {
+    height: 40px;
   }
 
   .product__feature {
@@ -227,6 +236,7 @@
 
   .product__image {
     top: -50px;
+    right: -1px;
     width: 525px;
     height: 636px;
 

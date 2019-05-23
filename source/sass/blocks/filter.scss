@@ -76,6 +76,14 @@
   background-color: #63d1bb;
 }
 
+.filter__name-line--tel {
+  width: 200px;
+}
+
+.filter__name-line--email {
+  width: 179px;
+}
+
 .filter__list {
   margin: 0;
   padding: 0;
@@ -174,16 +182,12 @@
 .filter__input-checkbox:hover + .filter__indicator-checkbox,
 .filter__input-checkbox:focus + .filter__indicator-checkbox {
   border-color: #62d1ba;
+  outline: thin dotted;
 }
 
 .filter__input-radio:active + .filter__indicator-radio,
 .filter__input-checkbox:active + .filter__indicator-checkbox {
   border-color: #c7c7c7;
-}
-
-.filter__input-radio:focus + .filter__indicator-radio,
-.filter__input-checkbox:focus + .filter__indicator-checkbox {
-  outline: thin dotted;
 }
 
 .filter__label {
@@ -283,7 +287,7 @@
 .filter__necessarily {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   font-size: 14px;
   line-height: 16px;

@@ -1,14 +1,13 @@
 .manufacturing {
   margin: 0 auto;
-  margin-bottom: 57px;
+  margin-bottom: 55px;
 }
 
 .manufacturing__wrapper {
   position: relative;
   width: 260px;
   margin: 0 auto;
-  padding: 22px 0;
-  padding-bottom: 32px;
+  padding-top: 22px;
 
   border: 1px solid #ededed;
 }
@@ -17,7 +16,7 @@
   margin: 0;
   margin-left: 26px;
   padding-left: 64px;
-  padding-bottom: 167px;
+  padding-bottom: 169px;
 
   font-size: 17px;
   line-height: 24px;
@@ -48,6 +47,7 @@
 
 .manufacturing__button {
   width: 160px;
+  margin-bottom: 32px;
 }
 
 .manufacturing__icon-video {
@@ -60,8 +60,8 @@
 
 .manufacturing__icon-play {
   position: absolute;
-  top: 130px;
-  left: 83px;
+  top: 131px;
+  left: 80px;
   width: 101px;
   height: 77px;
 
@@ -69,11 +69,15 @@
 
   &:hover,
   &:focus {
+    top: 124px;
+    left: 70px;
     width: 121px;
     height: 92px;
   }
 
   &:active {
+    top: 141px;
+    left: 90px;
     width: 81px;
     height: 62px;
 
@@ -93,7 +97,6 @@
     margin-top: 508px;
     padding: 0;
     padding-top: 37px;
-    padding-bottom: 45px;
   }
 
   .manufacturing__title {
@@ -125,6 +128,7 @@
 
   .manufacturing__button {
     width: 552px;
+    margin-bottom: 43px;
   }
 
   .manufacturing__icon-video {
@@ -136,6 +140,17 @@
   .manufacturing__icon-play {
     top: -265px;
     left: 283px;
+
+    &:hover,
+    &:focus {
+      top: -255px;
+      left: 276px;
+    }
+
+    &:active {
+      top: -245px;
+      left: 303px;
+    }
   }
 }
 
@@ -194,5 +209,16 @@
   .manufacturing__icon-play {
     top: 190px;
     left: 291px;
+
+    &:hover,
+    &:focus {
+      top: 183px;
+      left: 281px;
+    }
+
+    &:active {
+      top: 203px;
+      left: 301px;
+    }
   }
 }
