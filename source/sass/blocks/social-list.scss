@@ -2,8 +2,8 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 145px;
+  flex-wrap: wrap;
+  width: 149px;
   margin: 0 auto;
   margin-bottom: 46px;
   padding: 0;
@@ -25,6 +25,15 @@
 
 .social-list__item {
   display: inline-block;
+  margin-right: 36px;
+}
+
+.social-list__item:nth-child(1) {
+  margin-right: 41px;
+}
+
+.social-list__item:nth-child(3n) {
+  margin: 0;
 }
 
 .social-list__link {
@@ -57,8 +66,10 @@
 
 @media (min-width: $tablet-width) {
   .social-list {
-    width: 140px;
+    width: 143px;
     margin: 0;
+    padding-top: 6px;
+    padding-left: 6px;
 
     border: none;
   }
@@ -67,17 +78,17 @@
     display: none;
   }
 
-  .social-list__link--twitter {
-    margin-right: 0;
+  .social-list__item {
+    margin-right: 39px;
   }
 
-  .social-list__item:nth-child(1) {
-    margin-right: 6px;
+  .social-list__link--twitter {
+    margin-right: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .social-list {
-    padding-left: 72px;
+    padding-left: 77px;
   }
 }

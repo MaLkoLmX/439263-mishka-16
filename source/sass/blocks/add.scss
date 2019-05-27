@@ -7,7 +7,7 @@
   margin: 0 auto;
   margin-left: -160px;
   padding-top: 31px;
-  padding-bottom: 49px;
+  padding-bottom: 46px;
 
   background-color: #ffffff;
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
@@ -27,7 +27,7 @@
 
 .add__title {
   display: block;
-  width: 143px;
+  width: 141px;
   margin: 0 auto;
   margin-bottom: 12px;
 
@@ -36,7 +36,7 @@
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: -0.6px;
+  letter-spacing: -0.8px;
 }
 
 .add__size {
@@ -49,44 +49,44 @@
   text-align: center;
 }
 
-.add__size-list {
-  margin: 0;
-  margin-bottom: 35px;
+.add__list {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 31px;
   padding: 0;
 
   list-style: none;
-  text-align: center;
 }
 
-.add__list-item {
-  display: inline-block;
-}
-
-.add__size-button {
-  width: 85px;
-  padding: 15px 0;
+.add__label-radio {
+  display: block;
+  width: 78px;
+  margin-right: 7px;
+  padding: 12px 0;
 
   font-size: 17px;
   line-height: 17px;
   font-weight: bold;
   text-align: center;
-  text-transform: uppercase;
-
-  background-color: #ffffff;
 
   border: 2px solid #ececec;
-
-  &:hover,
-  &:focus {
-    border-color: #c7c7c7;
-  }
+  cursor: pointer;
 }
 
-.add__size-button--active {
+.add__label-radio:last-child {
+  margin-right: 0;
+}
+
+.add__input-radio:checked + .add__label-radio {
   border-color: #62d1ba;
 }
 
 .add__button {
+  width: 259px;
+  padding: 16px;
+
   color: #ffffff;
 
   background-color: #63d1bb;
@@ -102,6 +102,11 @@
     padding-top: 33px;
   }
 
+  .add__list {
+    width: 350px;
+    margin-bottom: 32px;
+  }
+
   .add__title {
     margin-bottom: 15px;
     width: 100%;
@@ -110,23 +115,22 @@
     line-height: 57px;
 
     text-align: center;
+    letter-spacing: -0.3px;
   }
 
   .add__size {
-    margin-bottom: 22px;
+    margin-bottom: 21px;
 
     font-size: 17px;
+    font-weight: 30px;
   }
 
-  .add__size-button {
-    width: 115px;
-  }
-
-  .add__size-list {
-    margin-bottom: 32px;
+  .add__label-radio {
+    width: 108px;
+    padding: 15px 0;
   }
 
   .add__button {
-    width: 325px;
+    width: 349px;
   }
 }

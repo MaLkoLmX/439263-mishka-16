@@ -4,6 +4,24 @@
   width: 182px;
   margin: 0 auto;
   padding-top: 2px;
+
+  text-decoration: none;
+
+  fill: #63d1bb;
+  stroke: #63d1bb;
+
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+    stroke: #46c1ae;
+  }
+
+  &:active {
+    fill: #46c1ae;
+    stroke: #46c1ae;
+
+    opacity: 0.3;
+  }
 }
 
 .copyright__designed {
@@ -13,25 +31,9 @@
   color: #000000;
 }
 
-.copyright__academy {
-  margin-top: -9px;
-  margin-left: 21px;
-
-  stroke: #63d1bb;
-
-  &:hover .copyright__icon,
-  &:focus .copyright__icon {
-    stroke: #46c1ae;
-  }
-
-  &:active .copyright__icon {
-    stroke: #46c1ae;
-
-    opacity: 0.3;
-  }
-}
-
 .copyright__icon {
+  margin-top: -7px;
+  margin-right: -6px;
   width: 40px;
   height: 40px;
 }
@@ -49,12 +51,13 @@
 
   .copyright__icon {
     width: 37px;
+    margin-top: -9px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .copyright {
-    padding-right: 73px;
-    width: 185px;
+    padding-right: 52px;
+    width: 181px;
   }
 }

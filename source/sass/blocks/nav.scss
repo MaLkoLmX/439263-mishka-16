@@ -34,17 +34,18 @@
   border: none;
 }
 
-.nav__toggle--closed,
-.nav__toggle--noJS {
+.nav__toggle--closed {
   width: 21px;
   height: 20px;
 
   background-image: url("../img/icon-menu-close.svg");
 }
 
-.nav__list-nav,
-.nav__list-user,
-.nav__list-offers {
+.nav__toggle--noJS {
+  display: none;
+}
+
+.nav__list {
   display: none;
   margin: 0;
   padding: 0;
@@ -101,39 +102,12 @@
   height: 18px;
 }
 
-.nav__search::placeholder {
-  color: #000000;
-
-  &:hover,
-  &:focus {
-    color: rgba(0, 0, 0, 0.6);
-  }
-
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
-  }
-}
-
 .nav__search {
   padding: 30px;
   padding-left: 76px;
 
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: bold;
-  color: #000000;
-
   border: none;
   border-top: 1px solid #ececec;
-
-  &:hover,
-  &:focus {
-    color: rgba(0, 0, 0, 0.6);
-  }
-
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
-  }
 }
 
 .nav__item--search,
@@ -216,12 +190,12 @@
     margin: 0 48px;
   }
 
-  .nav__list-nav,
-  .nav__list-user {
+  .nav__list--nav,
+  .nav__list--user {
     display: flex;
   }
 
-  .nav__list-nav {
+  .nav__list--nav {
     width: 50%;
 
     background-color: #f1f1f1;
@@ -229,11 +203,11 @@
     order: 1;
   }
 
-  .nav__list-nav--index {
+  .nav__list--index {
     background-color: #fafafa;
   }
 
-  .nav__list-user {
+  .nav__list--user {
     min-width: 52%;
 
     background-color: #ffffff;
@@ -277,6 +251,8 @@
   }
 
   .nav__item--search {
+    width: 82px;
+
     border-right: 1px solid #ececec;
     border-left: 1px solid #ececec;
   }
@@ -294,7 +270,8 @@
     border: none;
   }
 
-  .nav__search::placeholder {
+  .nav__link--search {
+    padding: 32px 0;
     font-size: 0;
   }
 }
@@ -312,9 +289,9 @@
     padding: 0;
   }
 
-  .nav__list-offers {
+  .nav__list--offers {
     display: flex;
-    min-width: 550px;
+    min-width: 540px;
 
     order: 2;
   }
@@ -337,7 +314,7 @@
     margin-top: 10px;
   }
 
-  .nav__list-nav {
+  .nav__list--nav {
     width: 437px;
     padding-left: 47px;
 
@@ -346,7 +323,7 @@
     order: 0;
   }
 
-  .nav__list-user {
+  .nav__list--user {
     min-width: 397px;
 
     border: none;
@@ -354,7 +331,7 @@
   }
 
   .nav__delivery {
-    min-width: 450px;
+    min-width: 453px;
     padding-top: 17px;
     padding-right: 53px;
 
@@ -375,9 +352,9 @@
   }
 
   .nav__link--desktop-bottom {
-    margin-right: 5px;
+    margin-right: 10px;
     padding: 18px 0;
-    padding-left: 55px;
+    padding-left: 50px;
     font-size: 15px;
   }
 

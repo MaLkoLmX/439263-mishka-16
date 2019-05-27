@@ -1,6 +1,6 @@
-var listNav = document.querySelector(".nav__list-nav");
-var listUser = document.querySelector(".nav__list-user");
-var listOffers = document.querySelector(".nav__list-offers");
+var listNav = document.querySelector(".nav__list");
+var listUser = document.querySelector(".nav__list--user");
+var listOffers = document.querySelector(".nav__list--offers");
 var toggle = document.querySelector(".nav__toggle");
 var map = document.querySelector(".contacts__iframe");
 

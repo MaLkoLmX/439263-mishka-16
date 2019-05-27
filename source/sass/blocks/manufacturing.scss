@@ -1,6 +1,6 @@
 .manufacturing {
   margin: 0 auto;
-  margin-bottom: 55px;
+  margin-bottom: 59px;
 }
 
 .manufacturing__wrapper {
@@ -8,6 +8,7 @@
   width: 260px;
   margin: 0 auto;
   padding-top: 22px;
+  padding-bottom: 30px;
 
   border: 1px solid #ededed;
 }
@@ -47,7 +48,6 @@
 
 .manufacturing__button {
   width: 160px;
-  margin-bottom: 32px;
 }
 
 .manufacturing__icon-video {
@@ -85,6 +85,19 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .manufacturing__wrapper {
+    &:hover,
+    &:focus {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .manufacturing {
     margin-bottom: 63px;
@@ -97,6 +110,15 @@
     margin-top: 508px;
     padding: 0;
     padding-top: 37px;
+
+    &:hover .manufacturing__column,
+    &:focus .manufacturing__column {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active .manufacturing__column {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 
   .manufacturing__title {
@@ -203,7 +225,7 @@
     position: static;
     display: flex;
     width: 682px;
-    height: 455px;
+    height: 100%;
   }
 
   .manufacturing__icon-play {
